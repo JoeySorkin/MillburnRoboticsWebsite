@@ -5,6 +5,7 @@
 ## React
 
 - [] Configure Color Scheme
+- [] Add CSS Transitions [RESEARCH]
 - [] Navbar
   - [x] Create layout
   - [x] Add Millburn Robotics logo
