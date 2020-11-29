@@ -4,33 +4,24 @@ import React from 'react'
 import {useState} from 'react'
 import{AppBar, Button, ButtonGroup, Toolbar, Box} from '@material-ui/core/'
 import Grid from '@material-ui/core/Grid';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 //Interface for PROPS
 interface NavElemProps{
     children: string
 }
-const theme = createMuiTheme({
-    overrides: {
-      MuiButton: {
-        text: {
-          color: 'white',
-        },
-      },
+const useStyles = makeStyles((theme)=>({
+    button: {
+      color: '#fcfcfc',
+      fontSize: 20,
+      padding: "10px 30px"
     },
-  });
-  
+  }));
+
 //RFC
 const NavElem = (props: NavElemProps) => {
-    //Stylinge
-    const ButtonStyles = {
-        fontSize: 20,
-        padding: "10px 25px"
-    }
-    const ButtonFlex = 2;
+    const classes = useStyles()
     return(
-        <ThemeProvider theme={theme}>
-        <Button style={ButtonStyles}>{props.children}</Button>
-        </ThemeProvider>
+        <Button className={classes.button}>{props.children}</Button>
     )
 }
 export default NavElem;

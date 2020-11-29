@@ -1,30 +1,34 @@
 
 import React from 'react'
-import {useState} from 'react'
-import{Hidden, AppBar, Button, ButtonGroup, Toolbar, Box, Typography} from '@material-ui/core/'
-import Grid from '@material-ui/core/Grid';
+import {useState, useEffect} from 'react'
+import{Hidden, AppBar, Toolbar, useMediaQuery, Fade} from '@material-ui/core/'
+import {createMuiTheme, ThemeProvider, useTheme } from '@material-ui/core/styles'
 import NavElem from "./NavElem"
 import Logo from "./Logo"
 // import MenuBar from './MenuBar'
 import MenuHamburger from './MenuHamburger';
 import { PagesArr, Page } from './Pages';
-
-
+import colors from '../Core/colors'
 const NavBar = () => {
     return(
+
         <AppBar color="primary"> {/*The AppBar components provides an outer shell for the Navbar. It also has a cool shadow */}
-            <Toolbar>
-                <Hidden smUp>{/* ONCE THE NAVLINKS DISAPPEAR, THE HAMBURGER APPEARS */}
+            <Toolbar style={{margin: "0px 40px 0px 0px"}}>
+                <Hidden mdUp>{/* ONCE THE NAVLINKS DISAPPEAR, THE HAMBURGER APPEARS */}
                 <MenuHamburger/>
+                
                 </Hidden>
                 <Logo/>
-                <Hidden xsDown> {/* ONCE THE SCREEN SIZE GETS TO SIZE XS, NAVELEMS DISAPPEAR */}
+
+                <Hidden smDown> 
                     {PagesArr.map(e=>(
                         <NavElem>{e.name}</NavElem>
                     ))}
                 </Hidden>
             </Toolbar>    
         </AppBar>
+
+
     )
 }
 export default NavBar;

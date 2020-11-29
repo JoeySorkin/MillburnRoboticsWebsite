@@ -9,5 +9,5 @@ export interface Page {
     link?:string,
     icon: any 
 }
-export const PagesArr:Page[] = [{name: 'About', icon: InfoIcon }, {name: 'Contact Us', icon: ContactMailIcon}]
+export const PagesArr:Page[] = [{name: 'Our Teams', icon: InfoIcon, },{name: 'Our Program', icon: InfoIcon }, {name: 'VEX', icon: InfoIcon }, {name: 'Contact Us', icon: ContactMailIcon}]
 

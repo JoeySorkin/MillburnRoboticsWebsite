@@ -3,16 +3,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import {SwipeableDrawer ,Button, List, ListItem, ListItemIcon, ListItemText} from '@material-ui/core'
 //Pages interface 
+import colors from '../Core/colors'
 import { PagesArr, Page } from './Pages';
 const useStyles = makeStyles({
   list: {
@@ -21,6 +16,13 @@ const useStyles = makeStyles({
   fullList: {
     width: 'auto',
   },
+  listitem:{
+    '&:hover': {
+      background: "#26547cf0",
+      color: colors.white,
+      transition: "1s"
+    }
+  }
 });
 
 export default function SwipeableTemporaryDrawer() {
@@ -47,7 +49,7 @@ export default function SwipeableTemporaryDrawer() {
     >
       <List>
         {PagesArr.map(({name: text}, index) => (
-          <ListItem button>
+          <ListItem button className ={classes.listitem}>
             <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>

@@ -1,0 +1,38 @@
+Semi-site map (by content, not page)
+------------------
+Home Page
+|- Our Teams
+    |-7405N
+        |- Captain + Members
+        |- About the Team
+        |- About the Program
+    |-7405M
+        |- Captain + Members
+        |- About the Team
+        |- About the Program
+    |-7405K
+        |- Captain + Members
+        |- About the Team
+        |- About the Program
+    |-7405R
+        |- Captain + Members
+        |- About the Team
+        |- About the Program
+    |-7405X
+        |- Captain + Members
+        |- About the Team
+        |- About the Program
+|- Our Program
+    |- Instructors
+    |- Outreach
+    |- Our goals
+    |- Virtual robotics
+    |- Good luck to other teams
+|- Vex
+    |- About the Program
+    |- About the competition
+    |- Why its great
+    |- ...
+|- Contact us
+    |- Mail, Map, standard
+    

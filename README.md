@@ -14,15 +14,18 @@
     - [] Add swipe feature?
   - [] Transparency on scroll?
 - [] Home Page
-  - [] Hero
+  - [x] Hero
+    - [] Fix image horizontal parralax
     - [] Add Hero Picture with a motto?
     - [] Add subhero - awards?
   - [] Captains - Picture and description. Linked to about team page/id
   - [] Teachers - Quotes etc?
 - [] About
-  - [] Outreach
+  - [] s
     - []...
 
 ## API
 
 ## Deployment
+
+- [] Set up a FireBase project?
