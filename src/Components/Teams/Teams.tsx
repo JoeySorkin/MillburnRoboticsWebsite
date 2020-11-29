@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import TeamsCard from './TeamsCard';
 import colors from '../Core/colors';
+import Fade from 'react-reveal/Fade';
  export default function Teams( ) {
     const responsive = {
         desktop: {
@@ -23,6 +24,7 @@ import colors from '../Core/colors';
       };
       return(
         <div style={{height: '100%', margin: '20px 6vw'}}>
+        <Fade up>
       <Carousel
        arrows={false} renderButtonGroupOutside={true}
         swipeable={true}
@@ -45,6 +47,7 @@ import colors from '../Core/colors';
           <TeamsCard color={colors.orange} name="7405N">Hello!</TeamsCard>
           <TeamsCard color={colors.orange} name="7405X">Hello!</TeamsCard>
       </Carousel>
+      </Fade>
       </div>
       )      
  }
