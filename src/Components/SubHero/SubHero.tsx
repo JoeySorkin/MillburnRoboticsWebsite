@@ -1,9 +1,9 @@
 import React from 'react'
-import { Paper, Typography } from '@material-ui/core';
+
 import { makeStyles } from '@material-ui/core/styles';
 import colors from '../Core/colors';
 import Card from './Card';
-import imagefill from './imagefill.png'
+
 export default function SubHero() {
 
     const useStyles = makeStyles((theme)=>({

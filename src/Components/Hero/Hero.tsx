@@ -2,7 +2,7 @@ import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core';
 import placeholder from './placeholder.png'
-import colors from '../Core/colors'
+
 export default function Hero() {
     const useStyles = makeStyles((theme)=>({
         wrapper:{ 

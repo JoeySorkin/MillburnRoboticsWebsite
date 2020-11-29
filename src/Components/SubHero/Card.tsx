@@ -1,10 +1,10 @@
 import React from 'react'
 import { Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import colors from '../Core/colors';
+
 import cogwheel from './cog.svg'
-import { transform } from 'typescript';
-import { useEffect, useState } from 'react';
+
+import { useState } from 'react';
 interface CardProps{
     orient: 'left' | 'right',
     color: any,
