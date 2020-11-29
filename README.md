@@ -28,4 +28,5 @@
 
 ## Deployment
 
-- [] Set up a FireBase project?
+- [x] Set up a FireBase project?
+      https://millburn-robotics-2020.web.app/
