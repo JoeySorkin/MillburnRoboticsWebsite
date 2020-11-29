@@ -5,10 +5,14 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import {SwipeableDrawer ,Button, List, ListItem, ListItemIcon, ListItemText} from '@material-ui/core'
+import {SwipeableDrawer ,Button, List, ListItem, ListItemIcon, ListItemText, Divider} from '@material-ui/core'
 //Pages interface 
 import colors from '../Core/colors'
 import { PagesArr, Page } from './Pages';
+import GroupIcon from '@material-ui/icons/Group';
+import InfoIcon from '@material-ui/icons/Info';
+import BuildIcon from '@material-ui/icons/Build';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -17,6 +21,8 @@ const useStyles = makeStyles({
     width: 'auto',
   },
   listitem:{
+    height: '80%',
+    padding: '20px',
     '&:hover': {
       background: "#26547cf0",
       color: colors.white,
@@ -47,13 +53,32 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        {PagesArr.map(({name: text}, index) => (
+      <List stlye={{height: '100%'}}>
+
           <ListItem button className ={classes.listitem}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
+            <ListItemIcon><GroupIcon/></ListItemIcon>
+            <ListItemText primary={'Our Teams'} />
           </ListItem>
-        ))}
+          <ListItem button className ={classes.listitem}>
+            <ListItemIcon><InfoIcon/></ListItemIcon>
+            <ListItemText primary={'Our Program'} />
+          </ListItem>
+          <ListItem button className ={classes.listitem}>
+            <ListItemIcon><BuildIcon/></ListItemIcon>
+            <ListItemText primary={'VEX'} />
+          </ListItem>
+          <ListItem button className ={classes.listitem}>
+            <ListItemIcon><ContactMailIcon/></ListItemIcon>
+            <ListItemText primary={'Contact Us'} />
+          </ListItem>
+      
+        {/* <div style={{bottom: 0, position:'relative'}}>
+        <Divider/>
+        <ListItem button className ={classes.listitem}>
+            <ListItemIcon><ContactMailIcon/></ListItemIcon>
+            <ListItemText primary={'Contact Us'} />
+        </ListItem>
+        </div> */}
       </List>
     </div>
   );

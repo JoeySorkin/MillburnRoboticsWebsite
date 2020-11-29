@@ -12,7 +12,7 @@ import colors from '../Core/colors'
 const NavBar = () => {
     return(
 
-        <AppBar color="primary"> {/*The AppBar components provides an outer shell for the Navbar. It also has a cool shadow */}
+        <AppBar color="primary" style={{overflowX: 'hidden'}}> {/*The AppBar components provides an outer shell for the Navbar. It also has a cool shadow */}
             <Toolbar style={{margin: "0px 40px 0px 0px"}}>
                 <Hidden mdUp>{/* ONCE THE NAVLINKS DISAPPEAR, THE HAMBURGER APPEARS */}
                 <MenuHamburger/>

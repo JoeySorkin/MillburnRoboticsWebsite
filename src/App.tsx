@@ -15,8 +15,8 @@ function App() {
     margin: 10
   }
   return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
+    <div className="App" >
+      <ThemeProvider theme={theme} >
       {/* PAGE UP BUTTON */}
       <Fade>
       <Fab style={fabstyles}color="primary" aria-label="pageup">
@@ -25,7 +25,10 @@ function App() {
       </Fade>
       {/* REAL CONTENT */}
       <NavigationBar/>
-      <Hero/>
+      <div style={{overflowX: 'hidden'}}>
+      <Hero />
+      </div>
+     
       <br/>
       <br/>
       <SubHero/>
