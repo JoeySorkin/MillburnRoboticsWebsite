@@ -21,33 +21,38 @@ export default function Card(props:CardProps) {
     // setInterval(()=>{rotateCog(rotation + 5)}, 200)
     const useStyles = makeStyles((theme)=>({
     leftcard: {
-        margin: "40px 3vw 40px 3vw",
+        margin: "40px 6vw 40px 6vw",
         width: "60vw",
         float: 'left',
+
     },
     rightcard: {
-        margin: "40px 3vw 40px 3vw",
+        margin: "40px 6vw 40px 6vw",
         width: "60vw",
         float: 'right',
+
     },
     text: {
-        margin: "20px 20px"
+        margin: "20px 20px",
+
     },
 
     leftcog:{
-        position: 'relative',
-        bottom: '195px',
+        position: 'absolute',
+        top: '-38px',
+        left: '-38px',
         zIndex: -1,
         translate: '20px 0px',
-        animation: '$rotation 8s infinite linear',
+        animation: '$rotationa 8s infinite linear',
     },
     rightcog:{
-        position: 'relative',
-        bottom: '195px',
+        position: 'absolute',
+        top: '-38px',
+        right: '-38px',
         zIndex: -1,
-        animation: '$rotation 8s infinite linear',
+        animation: '$rotationb 8s infinite linear',
     },
-    '@keyframes rotation' :{
+    '@keyframes rotationa' :{
         'from': {
           transform: 'rotate(0deg)'
         },
@@ -55,16 +60,22 @@ export default function Card(props:CardProps) {
           transform: 'rotate(359deg)'
         }
       },
+      '@keyframes rotationb' :{
+        'from': {
+          transform: 'rotate(359deg)'
+        },
+        'to': {
+          transform: 'rotate(0deg)'
+        }
+      },
     }));
     const classes = useStyles();
     return (
-        <div>
-            
-            <Paper className={props.orient === 'left' ? classes.leftcard : classes.rightcard} style = {{backgroundColor: props.color, }}  elevation={3}>
+        <div >
+            <Paper style={{ backgroundColor: props.color, position: 'relative', height: '100%', width: '80s%'}} className={props.orient === 'left' ? classes.leftcard : classes.rightcard} elevation={3}>
                 <Typography className={classes.text} variant="h2">{props.title}</Typography>
                 <Typography className={classes.text} variant="body1">{props.children}</Typography>
                 <img style = {{transform: `rotate(${rotation}deg)`}}className = {props.orient === 'left' ? classes.leftcog : classes.rightcog} src={cogwheel}/>
             </Paper>
         </div>
-    )
-}
+    )}

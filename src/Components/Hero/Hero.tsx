@@ -8,16 +8,16 @@ export default function Hero() {
         wrapper:{ 
             margin: "-10px 0px 0px 0px",
             width: "100vw",
-            height: "70vh",
+            height: "100vh",
             background: "url(" + placeholder + ") no-repeat center center",
-            // backgroundSize: "cover"
+            backgroundSize: "cover"
         },
         heroimage:{
 
         },
         centerdiv:{
             justifyContent: 'center',
-            margin: "20vh auto",
+            margin: "310px auto",
             position: "absolute"
         },
         centertext:{

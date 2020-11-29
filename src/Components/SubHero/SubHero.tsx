@@ -3,35 +3,30 @@ import { Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import colors from '../Core/colors';
 import Card from './Card';
+import imagefill from './imagefill.png'
 export default function SubHero() {
 
     const useStyles = makeStyles((theme)=>({
-    leftcard: {
-        margin: "20px 50px",
-        width: "60vw",
-        float: 'left',
-        
-    },
-    rightcard: {
-        margin: "20px 50px",
-        width: "60vw",
-        float: 'right',
-        
-    },
-    lefttext: {
-        margin: "20px 50px"
-    },
-    righttext: {
-        margin: "20px 50px",
-        textAlign: 'right'
+    maindiv:{
+        // backgroundImage: `url(${imagefill})`,
+        height: '100%',
+        width: '100%',
+        display: 'inline-block',
+        zIndex: -2
     }
     }));
     const classes = useStyles();
     return (
-        <div>
-            <Card title="Create" orient = "left" color={colors.green}>Body Text</Card>
-            <Card  title="Design" orient = "right" color={colors.green}>Body Text</Card>
-            <Card  title="Innovate" orient = "left" color={colors.green}>Body Text</Card>
+        <div className={classes.maindiv}>
+            <Card title="Design" orient = "left" color={colors.green}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </Card>
+            <Card  title="Create" orient = "right" color={colors.green}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </Card>
+            <Card  title="Innovate" orient = "left" color={colors.green}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </Card>
         </div>
     )
 }
