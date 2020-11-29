@@ -6,7 +6,7 @@ import theme from './theme'
 import NavigationBar from './Components/NavigationBar/NavigationBar'
 import Hero from './Components/Hero/Hero'
 import SubHero from './Components/SubHero/SubHero';
-
+import Teams from './Components/Teams/Teams';
 function App() {
   const fabstyles = {
     position: 'fixed',
@@ -19,7 +19,7 @@ function App() {
       <ThemeProvider theme={theme} >
       {/* PAGE UP BUTTON */}
       <Fade>
-      <Fab style={fabstyles}color="primary" aria-label="pageup">
+      <Fab color="primary" aria-label="pageup">
           <ArrowUpwardIcon/>
       </Fab>
       </Fade>
@@ -32,8 +32,8 @@ function App() {
       <br/>
       <br/>
       <SubHero/>
+      <Teams/>
       </ThemeProvider>
-      
     </div>
   );
 }

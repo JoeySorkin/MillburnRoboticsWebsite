@@ -53,7 +53,7 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List stlye={{height: '100%'}}>
+      <List style={{height: '100%'}}>
 
           <ListItem button className ={classes.listitem}>
             <ListItemIcon><GroupIcon/></ListItemIcon>

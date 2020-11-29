@@ -75,7 +75,7 @@ export default function Card(props:CardProps) {
             <Paper style={{ backgroundColor: props.color, position: 'relative', height: '100%', width: '80s%'}} className={props.orient === 'left' ? classes.leftcard : classes.rightcard} elevation={3}>
                 <Typography className={classes.text} variant="h2">{props.title}</Typography>
                 <Typography className={classes.text} variant="body1">{props.children}</Typography>
-                <img style = {{transform: `rotate(${rotation}deg)`}}className = {props.orient === 'left' ? classes.leftcog : classes.rightcog} src={cogwheel}/>
+                <img alt = "rotating gear around text cards" react-material-ui-carouselstyle = {{transform: `rotate(${rotation}deg)`}}className = {props.orient === 'left' ? classes.leftcog : classes.rightcog} src={cogwheel}/>
             </Paper>
         </div>
     )}
