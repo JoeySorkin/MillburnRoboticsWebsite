@@ -26,7 +26,7 @@ const NavBar = () => {
                 <Hidden mdDown >  
                 <div  style = {{position: 'absolute', right: '2vw'}}>
                     {PagesArr.map((e, index)=>(
-                        <Link to={e.link} style={{textDecoration: "none"}} key="index">
+                        <Link  replace to={e.link} style={{textDecoration: "none"}} key="index">
                         <NavElem  key="index">{e.name}</NavElem>
                         </Link>
                     ))}

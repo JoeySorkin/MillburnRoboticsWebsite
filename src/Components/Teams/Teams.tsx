@@ -55,11 +55,10 @@ import { Typography } from '@material-ui/core';
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-          <TeamsCard color={colors.orange} name="7405K">Hello!</TeamsCard>
-          <TeamsCard color={colors.orange} name="7405R">Hello!</TeamsCard>
-          <TeamsCard color={colors.orange} name="7405M">Hello!</TeamsCard>
-          <TeamsCard color={colors.orange} name="7405N">Hello!</TeamsCard>
-          <TeamsCard color={colors.orange} name="7405X">Hello!</TeamsCard>
+       {['7405K', '7405R', '7405M', '7405N', '7405X'].map((elem)=>(
+        <TeamsCard color={colors.orange} name={elem}>Hello!</TeamsCard>
+       ))}
+          
       </Carousel>
       </Fade>
       </div>

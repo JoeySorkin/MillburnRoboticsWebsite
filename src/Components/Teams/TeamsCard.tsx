@@ -2,9 +2,11 @@ import React from 'react'
 import { Card, Paper, Typography, CardActionArea, CardMedia, CardContent, CardActions,Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import colors from '../Core/colors';
+import {TeamInfo } from './Members';
+import { Link } from 'react-router-dom';
 interface TeamCardProps{
     name:string
-    children:string
+    children?:string
     color:string
 }
 export default function TeamsCard(props:TeamCardProps) {
@@ -25,6 +27,7 @@ export default function TeamsCard(props:TeamCardProps) {
   },
       }));
       const classes = useStyles()
+      const team: any = TeamInfo.get(props.name)
     return (
         <Card className={classes.root}>
         <CardActionArea>
@@ -35,16 +38,18 @@ export default function TeamsCard(props:TeamCardProps) {
           />
           <CardContent style={{backgroundColor: props.color}}>
             <Typography gutterBottom variant="h5" component="h2">
-              Team {props.name}
+              Team {team.name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              {props.children} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et ultrices. Aliquam purus sit amet luctus venenatis lectus. Ut sem nulla pharetra diam sit. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna.
+               {team.description}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions style={{backgroundColor: props.color}}>
           <Button size="small" color="primary">
+            <Link to={`/teams/${props.name}`} style={{textDecoration: 'none', color: 'inherit'}}>
             Learn More
+            </Link>
           </Button>
         </CardActions>
       </Card>

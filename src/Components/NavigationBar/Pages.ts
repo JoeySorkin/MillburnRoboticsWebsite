@@ -12,5 +12,5 @@ export interface Page {
     link:string,
 }
 
-export const PagesArr:Page[] = [{name: 'Home', link: ''},{name: 'Our Program', link: 'ourprogram'}, {name: 'Our Teams', link: 'teams'}, {name: 'VEX', link: 'vex' }, {name: 'Contact Us', link: 'contact'}]
+export const PagesArr:Page[] = [{name: 'Home', link: ''},{name: 'Our Program', link: '/ourprogram'}, {name: 'Our Teams', link: '/teams/7405K'}, {name: 'VEX', link: '/vex' }, {name: 'Contact Us', link: '/contact'}]
 

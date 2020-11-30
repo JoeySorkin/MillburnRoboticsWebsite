@@ -22,6 +22,7 @@ function App() {
     <div className="App" >
       <ThemeProvider theme={theme} >
       <Router>
+      <NavigationBar/>
       <Switch>
         <Route exact path="/">
          <Home/>
@@ -62,7 +63,7 @@ function Home() {
       </Fab>
       </Fade>
       {/* REAL CONTENT */}
-      <NavigationBar/>
+      
       <div style={{overflowX: 'hidden'}}>
       <Hero />
       </div>
@@ -86,7 +87,7 @@ function Home() {
 function TeamsPage(){
   return(
     <>
-    <NavigationBar/>
+    
     <TeamsPageMain/>
     </>
   )
@@ -94,7 +95,7 @@ function TeamsPage(){
 function ProgramPage(){
   return(
     <>
-    <NavigationBar/>
+    
 
     </>
   )
@@ -102,7 +103,7 @@ function ProgramPage(){
 function VexPage(){
   return(
     <>
-    <NavigationBar/>
+    
 
     </>
   )
@@ -110,7 +111,7 @@ function VexPage(){
 function ContactPage(){
   return(
     <>
-    <NavigationBar/>
+    
 
     </>
   )
