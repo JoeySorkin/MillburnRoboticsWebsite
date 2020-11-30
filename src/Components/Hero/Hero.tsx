@@ -30,7 +30,8 @@ export default function Hero() {
             width: "100%",
             fontSize: "100px",
             lineHeight: "100px",
-            color: colors.white
+            color: colors.white,
+            fontFamily: 'Fira Code'
         }
     }));
     const classes = useStyles();

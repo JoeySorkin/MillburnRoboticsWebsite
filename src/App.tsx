@@ -7,7 +7,45 @@ import NavigationBar from './Components/NavigationBar/NavigationBar'
 import Hero from './Components/Hero/Hero'
 import SubHero from './Components/SubHero/SubHero';
 import Teams from './Components/Teams/Teams';
+import OurProgram from './Components/OurProgram/OurProgram';
+import VEX from './Components/VEX/VEX';
+import TeamsPageMain from './Components/Teams/TeamsPageMain'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 function App() {
+
+  return (
+    <div className="App" >
+      <ThemeProvider theme={theme} >
+      <Router>
+      <Switch>
+        <Route exact path="/">
+         <Home/>
+        </Route>
+        <Route path="/teams">
+         <TeamsPage/>
+        </Route>
+        <Route path="/ourprogram">
+         <ProgramPage/>
+        </Route>
+        <Route path="/vex">
+         <VexPage/>
+        </Route>
+        <Route path="/contact">
+         <ContactPage/>
+        </Route>
+      </Switch>
+      </Router>
+      </ThemeProvider>
+    </div>
+  );
+}
+
+function Home() {
   const fabstyles = {
     position: 'fixed',
     bottom: 0,
@@ -15,8 +53,8 @@ function App() {
     margin: 10
   }
   return (
-    <div className="App" >
-      <ThemeProvider theme={theme} >
+    <div>
+
       {/* PAGE UP BUTTON */}
       <Fade>
       <Fab color="primary" aria-label="pageup">
@@ -32,10 +70,49 @@ function App() {
       <br/>
       <br/>
       <SubHero/>
+      <OurProgram/>
+      <br/>
+      <br/>
       <Teams/>
-      </ThemeProvider>
+      <br/>
+      <br/>
+ 
+      <br/>
+      <br/>
+      <VEX/>
     </div>
-  );
+  )
 }
+function TeamsPage(){
+  return(
+    <>
+    <NavigationBar/>
+    <TeamsPageMain/>
+    </>
+  )
+}
+function ProgramPage(){
+  return(
+    <>
+    <NavigationBar/>
 
+    </>
+  )
+}
+function VexPage(){
+  return(
+    <>
+    <NavigationBar/>
+
+    </>
+  )
+}
+function ContactPage(){
+  return(
+    <>
+    <NavigationBar/>
+
+    </>
+  )
+}
 export default App;

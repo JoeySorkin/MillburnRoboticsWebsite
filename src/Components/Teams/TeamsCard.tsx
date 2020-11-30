@@ -11,7 +11,8 @@ export default function TeamsCard(props:TeamCardProps) {
     const useStyles = makeStyles((theme)=>({
         wrapper: {
             height: '100%',
-            backgroundColor: colors.green
+            backgroundColor: colors.green,
+
         },
         title:{
             fontSize: '35px'

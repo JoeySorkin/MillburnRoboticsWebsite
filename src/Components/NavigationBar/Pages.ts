@@ -9,9 +9,8 @@ import BuildIcon from '@material-ui/icons/Build';
 import React from 'react';
 export interface Page {
     name:string,
-    link?:string,
-    icon: any 
+    link:string,
 }
 
-export const PagesArr:Page[] = [{name: 'Our Teams', icon: null},{name: 'Our Program', icon: null}, {name: 'VEX', icon: null }, {name: 'Contact Us', icon: null}]
+export const PagesArr:Page[] = [{name: 'Home', link: ''},{name: 'Our Program', link: 'ourprogram'}, {name: 'Our Teams', link: 'teams'}, {name: 'VEX', link: 'vex' }, {name: 'Contact Us', link: 'contact'}]
 
