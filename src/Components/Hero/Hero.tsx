@@ -4,6 +4,7 @@ import { Typography } from '@material-ui/core';
 import placeholder from './placeholder.png'
 import Particles from 'react-particles-js';
 import colors from '../Core/colors';
+
 export default function Hero() {
     const useStyles = makeStyles((theme)=>({
         wrapper:{ 
@@ -19,7 +20,8 @@ export default function Hero() {
         },
         centerdiv:{
             justifyContent: 'center',
-            margin: "310px auto",
+            top: '40%',
+            margin: "0px auto",
             position: "absolute",
             width: '100%'
 
@@ -28,10 +30,10 @@ export default function Hero() {
             overflow: 'hidden',
             height: '100%',
             width: "100%",
-            fontSize: "100px",
+            fontSize: "450%",
             lineHeight: "100px",
             color: colors.white,
-            fontFamily: 'Fira Code'
+            fontFamily: 'Fira Code',
         }
     }));
     const classes = useStyles();

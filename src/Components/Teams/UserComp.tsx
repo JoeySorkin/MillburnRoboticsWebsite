@@ -2,7 +2,7 @@ import React from 'react'
 import {Avatar, Box, Card, Typography, Chip, Paper} from '@material-ui/core/';
 import { makeStyles } from '@material-ui/core/styles';
 import { Name, User } from './Members';
-
+import { Fade } from 'react-reveal'
 interface UserProps{
     User: User
 }
@@ -50,6 +50,7 @@ export default function UserComp(props: UserProps ) {
       ]);
       const classes = useStyles();
     return (
+        <Fade up>
         <Card elevation = {5} className={classes.root}>
           <div className={classes.card}>
             <div className={classes.cardHeader}>
@@ -76,7 +77,7 @@ export default function UserComp(props: UserProps ) {
           </div>
         
         </Card>
-
+    </Fade>
 
     )
 }

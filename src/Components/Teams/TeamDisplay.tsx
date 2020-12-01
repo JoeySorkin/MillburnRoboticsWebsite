@@ -6,6 +6,7 @@ import { FakeUser, Team } from './Members';
 import { useParams } from 'react-router-dom';
 import { TeamInfo } from './Members'
 import { useState } from 'react';
+import { Fade } from 'react-reveal'
 export default function TeamDisplay() {
     const useStyles = makeStyles((theme)=>({
 
@@ -24,16 +25,20 @@ export default function TeamDisplay() {
       const classes = useStyles()
       const team: any  = TeamInfo.get(teamId);
     return (
+
         <div>
+            <Fade up>
             <Paper elevation={3}>
                  <Typography className={classes.title} variant='h2'>{team.name} </Typography>
                  <Typography className={classes.title} variant='body1'>{team.description}</Typography>
             </Paper>
+            </Fade>
             <div className={classes.userbox}>
             {team.members.map((elem)=>(
                 <UserComp User={elem}></UserComp> 
             ))}
             </div>
+        
         </div>
     )
 }

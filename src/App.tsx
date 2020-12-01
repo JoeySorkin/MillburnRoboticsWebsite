@@ -10,12 +10,15 @@ import Teams from './Components/Teams/Teams';
 import OurProgram from './Components/OurProgram/OurProgram';
 import VEX from './Components/VEX/VEX';
 import TeamsPageMain from './Components/Teams/TeamsPageMain'
+import config from 'react-reveal/globals';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+config({ ssrFadeout: true });
 function App() {
 
   return (
