@@ -43,11 +43,6 @@ export default function UserComp(props: UserProps ) {
         }
 
       }));
-      const [chipData, setChipData] = React.useState([
-        { key: 0, label: 'Coder' },
-        { key: 1, label: '7405K' },
-        { key: 2, label: '7405X' },
-      ]);
       const classes = useStyles();
     return (
         <Fade up>
@@ -58,21 +53,21 @@ export default function UserComp(props: UserProps ) {
              <Typography align='center' style={{width:'50%'}} variant='h6'>{person.name.first +' '+ person.name.last}</Typography>
             </div>
             <div className={classes.cardBody}>
-                {chipData.map((data) => {
+                {person.roles.map((data, index) => {
                 let icon;
 
                 return (
-                  <li key={data.key}>
+                  <li key={index}>
                     <Chip
 
-                      label={data.label}
+                      label={data}
                       className={classes.chip}
                     />
                   </li>
                 );
               })}
 
-            <Typography variant='body1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada urna vel orci sollicitudin dapibus. Proin congue sodales est, viverra tincidunt sapien accumsan a. Donec eu arcu at dui finibus tristique. Nunc quis leo eu justo imperdiet viverra. Vestibulum dignissim elit in lacus suscipit laoreet. Suspendisse potenti. Curabitur vel lacus sodales, ultrices urna a, vestibulum massa</Typography>
+            <Typography variant='body1'>{person.bio}</Typography>
             </div>
           </div>
         

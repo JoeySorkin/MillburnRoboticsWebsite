@@ -11,7 +11,8 @@ import OurProgram from './Components/OurProgram/OurProgram';
 import VEX from './Components/VEX/VEX';
 import TeamsPageMain from './Components/Teams/TeamsPageMain'
 import config from 'react-reveal/globals';
-
+import ContactUs from './Components/ContactUs/ContactUs';
+import Footer from './Components/Footer/Footer';
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,6 +28,7 @@ function App() {
       <Router>
       <NavigationBar/>
       <Switch>
+        <div style={{minHeight: '100%', marginBottom: '-50px'}}>
         <Route exact path="/">
          <Home/>
         </Route>
@@ -42,7 +44,10 @@ function App() {
         <Route path="/contact">
          <ContactPage/>
         </Route>
+        <div style={{ height: '150px'}}></div>
+        </div>
       </Switch>
+      <Footer/>
       </Router>
       </ThemeProvider>
     </div>
@@ -84,13 +89,25 @@ function Home() {
       <br/>
       <br/>
       <VEX/>
+      <br/>
+      <br/>
+ 
+      <br/>
+      <br/>
+      <ContactUs/>
     </div>
   )
 }
 function TeamsPage(){
   return(
     <>
-    
+                <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
     <TeamsPageMain/>
     </>
   )
@@ -98,8 +115,14 @@ function TeamsPage(){
 function ProgramPage(){
   return(
     <>
-    
-
+                <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+      <OurProgram/>
     </>
   )
 }
@@ -107,15 +130,28 @@ function VexPage(){
   return(
     <>
     
-
+    <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <VEX/>
     </>
   )
 }
 function ContactPage(){
   return(
     <>
-    
-
+                <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+      <ContactUs/>
     </>
   )
 }

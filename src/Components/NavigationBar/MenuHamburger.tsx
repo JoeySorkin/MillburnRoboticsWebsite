@@ -33,9 +33,7 @@ const useStyles = makeStyles({
 
 export default function SwipeableTemporaryDrawer() {
   const history = useHistory();
-  const handleOnClick = useCallback((link) => history.push(`/${link}`), [history]);
-
-
+  const handleOnClick = useCallback((link) => history.push(`${link}/`), [history]);
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -65,7 +63,7 @@ export default function SwipeableTemporaryDrawer() {
     >
       <List style={{height: '100%'}}>
       {PagesArr.map(({name: text, link: link}, index)=>(
-        <ListItem onClick={()=>{handleOnClick(link)}}button className ={classes.listitem}>
+        <ListItem key={ index } onClick={()=>{handleOnClick(link)}}button className ={classes.listitem}>
            <ListItemIcon>{iconReturn(text)}</ListItemIcon>
            <ListItemText primary={text} />
         </ListItem>

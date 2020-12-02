@@ -18,10 +18,10 @@ export interface Team{
 
 export const FakeUser:User = {
     photo: './placeholder.png',
-    name: {first: "Joey", last: "Sorkin"},
+    name: {first: "Dummy", last: "User"},
     grade: 'Freshman',
-    bio: 'I make websites lmao',
-    roles: ['Programmer']
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada urna vel orci sollicitudin dapibus. Proin congue sodales est, viverra tincidunt sapien accumsan a. Donec eu arcu at dui finibus tristique. Nunc quis leo eu justo imperdiet viverra. Vestibulum dignissim elit in lacus suscipit laoreet. Suspendisse potenti. Curabitur vel lacus sodales, ultrices urna a, vestibulum massa',
+    roles: ['Dummy Role', 'Dummy Team']
 }
 
 export const TeamInfo: Map<string, Team | null> = new Map([
