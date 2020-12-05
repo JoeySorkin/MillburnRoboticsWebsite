@@ -9,6 +9,13 @@ interface TeamCardProps{
     children?:string
     color:string
 }
+function truncateString(str, num) {
+  if (str.length <= num) {
+    return str
+  }
+  return str.slice(0, num) + '...'
+}
+
 export default function TeamsCard(props:TeamCardProps) {
     const useStyles = makeStyles((theme)=>({
         wrapper: {
@@ -41,7 +48,7 @@ export default function TeamsCard(props:TeamCardProps) {
               Team {team.name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-               {team.description}
+               {truncateString(team.description, 220)}
             </Typography>
           </CardContent>
         </CardActionArea>

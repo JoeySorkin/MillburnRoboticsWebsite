@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Link, IconButton, Button, Grid, Typography, Container } from '@material-ui/core/';
 import colors from '../Core/colors';
 import { GitHub } from '@material-ui/icons';
-
+import ReactGA from 'react-ga';
 export default function Footer() {
     const useStyles = makeStyles((theme)=>({
         root:{
@@ -23,6 +23,12 @@ export default function Footer() {
         }
     }))
     const classes = useStyles();
+    const sendAnalytics = () =>{
+        ReactGA.event({
+            category: 'User',
+            action: 'Clicked on your github'
+          });
+    }
     return (
         <div className={classes.root}>
             
@@ -30,7 +36,7 @@ export default function Footer() {
             </Grid>
             <Grid className={classes.subfoot} container>
                 <div style={{display: 'inline-block', margin: 'auto'}}>
-                <Button target='_blank' style={{color: colors.white}}href = 'https://github.com/JoeySorkin/MillburnRoboticsWebsite2020' endIcon={<GitHub/>} >Made By Joey Sorkin</Button>
+                <Button onClick={sendAnalytics} target='_blank' style={{color: colors.white}}href = 'https://github.com/JoeySorkin/MillburnRoboticsWebsite2020' endIcon={<GitHub/>} >Made By Joey Sorkin</Button>
                 {' ©'} 2020
                 </div>
             </Grid>

@@ -13,12 +13,19 @@ import TeamsPageMain from './Components/Teams/TeamsPageMain'
 import config from 'react-reveal/globals';
 import ContactUs from './Components/ContactUs/ContactUs';
 import Footer from './Components/Footer/Footer';
+import ScrollToTop from './Components/ScrollToTop';
+import ReactGA from 'react-ga';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+ReactGA.initialize('G-Q0C0F5SBSK');
+
+ReactGA.pageview(window.location.pathname + window.location.search);
+
+
 config({ ssrFadeout: true });
 function App() {
 
@@ -26,6 +33,7 @@ function App() {
     <div className="App" >
       <ThemeProvider theme={theme} >
       <Router>
+      <ScrollToTop/>
       <NavigationBar/>
       <Switch>
         <div style={{minHeight: '100%', marginBottom: '-50px'}}>

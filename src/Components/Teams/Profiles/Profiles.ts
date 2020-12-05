@@ -154,7 +154,7 @@ const ZaynRekhi: User = {
 }
 const SahilShah: User = {
     name: {first: 'Sahil', last: 'Shah'},
-    roles: ['Code, Captain'],
+    roles: ['Code'],
     photo: SahilShahPng,
     bio: "I am Sahil Shah, and I am the code captain of 7405X. I have been captain for the past two years and have been on Millburn Robotics for the past four years. I first joined robotics due to my passion for electronics, and I have developed my skills continuously alongside my teammates. In addition to software design, I also enjoy designing complex contraptions using CAD. Outside of robotics, I was also the captain of Millburn's Rocketry team in my junior year.  "
 }
@@ -214,7 +214,7 @@ export const TeamInfo: Map<string, Team> = new Map([
         captains: [MelanieHerbert,  DevNadkarni],
         name: '7405M',
         description: "7405M, or Millburn Mercury, is a VEX robotics team competition in this year's Change Up Competition.  At the 2020 VEX States competition the team qualified for Worlds through both the Excellence Award and winning Tournament Finalists. Our goal for the future is mainly to grow and develop our problem solving, computer science, and mechanical building skills, in creating a competitive robot this year. ",
-        members: [KevinXu, DevNadkarni, ConnorVanderploeg, SahilShah]
+        members: [KevinXu, ConnorVanderploeg, SahilShah]
     }],
         ['7405N', {
         league: 'VEX',

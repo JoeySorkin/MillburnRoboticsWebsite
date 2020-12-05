@@ -25,10 +25,10 @@ export default function UserComp(props: UserProps ) {
     }
     const useStyles = makeStyles((theme) => ({
       chip: {
-        margin: theme.spacing(0.5),
+        margin: '0px 10px 0px -5px'
       },
       root:{
-        width: '300px',
+        width: '280px',
         margin: '5px',
         padding: '10px'
       },
