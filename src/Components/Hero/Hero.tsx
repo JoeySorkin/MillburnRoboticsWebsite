@@ -1,10 +1,8 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core';
-import placeholder from './placeholder.png'
 import Particles from 'react-particles-js';
 import colors from '../Core/colors';
-
+import logo from './logobw.png'
 export default function Hero() {
     const useStyles = makeStyles((theme)=>({
         wrapper:{ 
@@ -60,9 +58,10 @@ export default function Hero() {
                 }} 
                 /> 
             <div className = {classes.centerdiv}>
-                <Typography variant = "h5" align="center" className = {classes.centertext}>
+                {/* <Typography variant = "h5" align="center" className = {classes.centertext}>
                 Millburn <br/> Robotics
-                </Typography>
+                </Typography> */}
+                <img alt="Millburn Robotics" style={{display: 'block', margin: '-20px auto', maxWidth: '100vw'}} src={logo}/>
             </div>
             
         </div>

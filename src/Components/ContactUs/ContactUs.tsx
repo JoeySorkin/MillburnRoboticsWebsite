@@ -60,10 +60,9 @@ export default function ContactUs() {
     };
     const sendForm = () => {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", 'https://formtest.requestcatcher.com/test', true);
+        xhr.open("POST", 'https://millburnroboticsrestform.herokuapp.com/', true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send(`name=${name}&email=${email}&message=${message}`);
-    
     }
 
     const submitForm = () => {
