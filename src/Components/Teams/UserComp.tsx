@@ -3,8 +3,10 @@ import {Avatar, Box, Card, Typography, Chip, Paper} from '@material-ui/core/';
 import { makeStyles } from '@material-ui/core/styles';
 import { Name, User } from './Members';
 import { Fade } from 'react-reveal'
+import AryanDugarPng from './Profiles/AryanDugar.png'
 interface UserProps{
-    User: User
+    User: User,
+    captain: boolean
 }
 export default function UserComp(props: UserProps ) {
     const person = props.User
@@ -54,18 +56,26 @@ export default function UserComp(props: UserProps ) {
             </div>
             <div className={classes.cardBody}>
                 {person.roles.map((data, index) => {
-                let icon;
-
                 return (
                   <li key={index}>
                     <Chip
-
                       label={data}
                       className={classes.chip}
                     />
                   </li>
                 );
-              })}
+              })
+              }
+              { props.captain ? (
+                  <li >
+                    <Chip
+                      label={"Captain"}
+                      className={classes.chip}
+                    />
+                  </li>
+                ) : ''
+              } 
+    
 
             <Typography variant='body1'>{person.bio}</Typography>
             </div>

@@ -2,10 +2,8 @@ import React from 'react'
 import { Paper, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import UserComp from './UserComp';
-import { FakeUser, Team } from './Members';
 import { useParams } from 'react-router-dom';
-import { TeamInfo } from './Members'
-import { useState } from 'react';
+import { TeamInfo } from './Profiles/Profiles'
 import { Fade } from 'react-reveal'
 export default function TeamDisplay() {
     const useStyles = makeStyles((theme)=>({
@@ -34,8 +32,11 @@ export default function TeamDisplay() {
             </Paper>
             </Fade>
             <div className={classes.userbox}>
+            {team.captains.map((elem)=>(
+                <UserComp captain User={elem}></UserComp> 
+            ))}
             {team.members.map((elem)=>(
-                <UserComp User={elem}></UserComp> 
+                <UserComp captain={false} User={elem}></UserComp> 
             ))}
             </div>
         

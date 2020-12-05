@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, Paper, Typography, CardActionArea, CardMedia, CardContent, CardActions,Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import colors from '../Core/colors';
-import {TeamInfo } from './Members';
+import {TeamInfo } from './Profiles/Profiles';
 import { Link } from 'react-router-dom';
 interface TeamCardProps{
     name:string
