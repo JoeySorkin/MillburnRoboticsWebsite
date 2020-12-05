@@ -1,6 +1,6 @@
 import { User, Name, Team } from '../Members';
 import AryanDugarPng from './AryanDugar.png'
-import IshaanSalhotraPng from './AryanDugar.png'
+import IshaanSalhotraPng from './IshaanSalhotra.png'
 import MohanSubramanianPng from './MohanSubmarinian.png'
 import AaronAgarwalPng from './AaronAgarwal.png'
 import AbhiSinghPng from './AbhiSingh.png'

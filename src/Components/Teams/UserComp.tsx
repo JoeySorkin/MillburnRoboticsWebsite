@@ -2,8 +2,10 @@ import React from 'react'
 import {Avatar, Modal, Card, Typography, Chip, Paper, Button, Backdrop} from '@material-ui/core/';
 import { makeStyles } from '@material-ui/core/styles';
 import { Name, User } from './Members';
-import { Fade } from 'react-reveal'
+import MuiFade from '@material-ui/core/Fade'
+
 import AryanDugarPng from './Profiles/AryanDugar.png'
+import Fade from 'react-reveal/Fade';
 interface UserProps{
     User: User,
     captain: boolean
@@ -123,7 +125,7 @@ export default function UserComp(props: UserProps ) {
                 timeout: 500,
               }}
               >
-              <Fade in={open}>
+              <MuiFade in={open}>
                 <Paper>
                 <div className={classes.cardModal}>
             <div className={classes.cardHeader}>
@@ -155,7 +157,7 @@ export default function UserComp(props: UserProps ) {
                   </div>
                 </div>
                 </Paper>
-              </Fade>
+              </MuiFade>
               </Modal>
         </Card>
     </Fade>
