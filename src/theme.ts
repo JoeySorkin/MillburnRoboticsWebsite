@@ -1,6 +1,6 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import colors from './Components/Core/colors'
-const theme = createMuiTheme({
+let theme = createMuiTheme({
   palette: {
     primary: {
       main: colors.blue,
@@ -11,6 +11,8 @@ const theme = createMuiTheme({
     },
   },
 });
-
-
+theme.typography.h1 = {
+  fontFamily: "Spartan",
+  fontSize: "100px"
+}
 export default theme

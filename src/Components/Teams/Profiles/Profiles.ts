@@ -200,7 +200,7 @@ export const TeamInfo: Map<string, Team> = new Map([
         captains: [LiamPilarski],
         name: '7405K',
         description: "Team 7405K has had a great year so far. We've been working out of garages instead of our school's robotics lab due to Covid-19, but that hasn't stopped us from making full use of our time. We're still extremely competitive despite the lack of many in person competitions, and are participating in numerous online challenges, including the Annotated Programming Skills Challenge, the VEX CAD Challenge, and the Dell sponsored website challenge. Over this past year we have really grown together as a team, working more cohesively and effectively as time progresses. We hope that our dedication and the dedication of the other Millburn VEX teams will pay off in the long run in the form of a world's qualification, but even if it doesn't, we've all learned valuable lessons about teamwork and responsibility thus far. ",
-        members: [JoeySorkin,  ZaynRekhi, GiaBhutani, AbhiSingh, AidanKumar, VictorDong, KaiStone, SahilSirdeshpande]
+        members: [JoeySorkin,  ZaynRekhi, GiaBhutani, AbhiSingh, AidanKumar, VictorDong, KaiStone, SahilSirdeshpande, MohanSubramanian]
     }],
         ['7405R', {
         league: 'VEX',
@@ -228,6 +228,6 @@ export const TeamInfo: Map<string, Team> = new Map([
         captains: [SahilShah, SahilSirdeshpande],
         name: '7405X',
         description: "Leading a team for the VEX AI Competition this year has turned out to be an adventure. Since this competition has not existed in the past, our team has constantly found new ways to innovate the design and code for our robots. From artificial intelligence to pathfinding systems, the software we wrote this year has allowed each code member to manifest their expertise while learning new concepts from others in the process. We are all excited to compete this season!",
-        members: [JoeySorkin, KaylaWang, AlexBarker, AaronAgarwal]
+        members: [JoeySorkin, KaylaWang, AlexBarker, AaronAgarwal, MohanSubramanian]
     }]
 ])
