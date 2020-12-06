@@ -8,15 +8,18 @@ export default function Footer() {
     const useStyles = makeStyles((theme)=>({
         root:{
             height: '200px',
-            color: colors.white
+            color: colors.white,
+            width: '101vw'
         },
         footer:{
             backgroundColor: '#19364f',
-            height: '75%'
+            height: '75%',
+            width: '120%'
         },
         subfoot:{
             backgroundColor: '#0e1f2e',
-            height: '32%'
+            height: '32%',
+            width: '100%'
         },
         link:{
             color: colors.white

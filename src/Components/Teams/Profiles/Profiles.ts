@@ -160,7 +160,7 @@ const SahilShah: User = {
     name: {first: 'Sahil', last: 'Shah'},
     roles: ['Code'],
     photo: SahilShahPng,
-    bio: "I am Sahil Shah, and I am the code captain of 7405X. I have been captain for the past two years and have been on Millburn Robotics for the past four years. I first joined robotics due to my passion for electronics, and I have developed my skills continuously alongside my teammates. In addition to software design, I also enjoy designing complex contraptions using CAD. Outside of robotics, I was also the captain of Millburn's Rocketry team in my junior year.  "
+    bio: "I am Sahil Shah, and I'm a senior and the code captain of 7405X. I have been captain for the past two years and have been on Millburn Robotics for the past four years. I first joined robotics due to my passion for electronics, and I have developed my skills continuously alongside my teammates. In addition to software design, I also enjoy designing complex contraptions using CAD. Outside of robotics, I was also the captain of Millburn's Rocketry team in my junior year.  "
 }
 const IshaanGhosh: User = {
     name: {first: 'Ishaan', last: 'Ghosh'},
@@ -206,7 +206,7 @@ const EthanSterling: User = {
 }
 const BruceZhang: User = {
     name: {first: "Bruce", last: "Zhang"},
-    roles: ["Build", "Psuedocode"],
+    roles: ["Build", "Pseudocode"],
     photo: BruceZhangPng,
     bio: "Hi, I'm Bruce, and this is my third year of VEX. I joined Millburn Robotics on a whim during the Turning Point season with 7405P, and since then I have been hooked on creating innovative, sturdy, and efficient designs. I've always had a passion for design, and robotics is the perfect place to spend that energy. I think the best thing about VRC is that it isn't a pure design competition, as a team must also be competent in human factors to succeed. Outside of robotics, I am a fencer, and also work on many random projects that pique my interest; small things like rings, fountain pens, keyboards and watches."
 }
@@ -234,8 +234,8 @@ export const TeamInfo: Map<string, Team> = new Map([
         league: 'VEX',
         captains: [LiweiSun],
         name: '7405R',
-        description: "When designing our robot, our team focused on speed and versatility. We are proud of our time spent tuning our rollers, which gives us a relatively fast cycle time compared to other teams. With this season being disrupted, our main goal for the future is to just advance as high up the Skills leaderboard as the pandemic would let us.",
-        members: [IshaanGhosh, ArmaanBassi ]
+        description: "We are 7405R, or Millburn Ruh Rohbotics! All throughout the pandemic, we have found numerous ways to connect and work together to create the best robot for the 2020-2021 VEX Change Up season. As a team, we don’t consider everyone to be just a builder or a coder. Although we all have our strengths, we are willing to help in any aspect of our robot that is needed while also making each other laugh at the same time. Although we are a new Millburn team, we have members from of 7405P (retired), 7405K, and 7405M from last year, alongside new members!  When designing our robot, our team focused on speed and versatility. We hope to achieve more success this year for skills through the pandemic and our fast cycle times are going to help us.",
+        members: [NatalieGreenspan, IshaanGhosh, ArmaanBassi ]
     }],
         ['7405M', {
         league: 'VEX',
