@@ -29,7 +29,8 @@ Here is a list of all of the libraries used and a brief description of their pur
 - **React-Particles-Js**: A library that provided a foundation for the particles seen in the hero of the site.
 - **React Reveal**: A library that provided animations and transitions as seen when the website is reloaded.
 - **React-GA**: A library that interfaced with google analytics so I can view metrics about the user experience
-  _For more information, visit my package.json_
+
+_For more information, visit my package.json_
 
 # Backend
 
@@ -51,4 +52,4 @@ Heroku is an easy to use online tool that allows you to deploy programs. I was e
 
 # Thank you!
 
-Thank you for reading through my description. Make sure to check out the website, I worked real hard on it.abs
+Thank you for reading through my description. Make sure to check out the website, I worked real hard on it.
