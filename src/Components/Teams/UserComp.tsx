@@ -86,7 +86,7 @@ export default function UserComp(props: UserProps ) {
           <div className={classes.card}>
             <div className={classes.cardHeader}>
             <Avatar style={{margin: '5px'}} alt = {person.name.first +' '+ person.name.last} src={person.photo}/>
-             <Typography align='center' style={{width:'70%'}} variant='h6'>{person.name.first +' '+ person.name.last}</Typography>
+             <Typography align='center' style={{width:'50%'}} variant='h6'>{person.name.first +' '+ person.name.last}</Typography>
             </div>
             <div className={classes.cardBody}>
                 {person.roles.map((data, index) => {
@@ -130,6 +130,7 @@ export default function UserComp(props: UserProps ) {
                 <div className={classes.cardModal}>
             <div className={classes.cardHeader}>
             <Avatar style={{margin: '5px'}} alt = {person.name.first +' '+ person.name.last} src={person.photo}/>
+            <br/>
              <Typography align='center' style={{width:'50%'}} variant='h6'>{person.name.first +' '+ person.name.last}</Typography>
             </div>
                   <div className={classes.cardBody}>

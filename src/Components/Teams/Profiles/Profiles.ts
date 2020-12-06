@@ -204,7 +204,7 @@ export const TeamInfo: Map<string, Team> = new Map([
     }],
         ['7405R', {
         league: 'VEX',
-        captains: [NatalieGreenspan,  LiweiSun],
+        captains: [LiweiSun],
         name: '7405R',
         description: "When designing our robot, our team focused on speed and versatility. We are proud of our time spent tuning our rollers, which gives us a relatively fast cycle time compared to other teams. With this season being disrupted, our main goal for the future is to just advance as high up the Skills leaderboard as the pandemic would let us.",
         members: [IshaanGhosh, ArmaanBassi ]
