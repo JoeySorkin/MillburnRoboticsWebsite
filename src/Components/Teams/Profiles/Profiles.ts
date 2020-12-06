@@ -26,6 +26,10 @@ import BrandonQiaoPng from './BrandonQiao.png'
 import LiweiSunPng from './LiweiSun.png'
 import JoeySorkinPng from './JoeySorkin.png'
 import ArmaanBassiPng from './ArmaanBassi.png'
+import BruceZhangPng from './BruceZhang.png'
+import DeenaWeissPng from './DeenaWeiss.png'
+import NikhilPrakashPng from './NikhilPrakash.png'
+import EthanSterlingPng from './EthanSterling.png'
 const AryanDugar: User = {
     name: {first: 'Aryan', last: 'Dugar'},
     photo: AryanDugarPng,
@@ -194,6 +198,30 @@ const JoeySorkin: User = {
     photo: JoeySorkinPng,
     bio: "Hello! I am Joey Sorkin. I love music, coding, and biking. I am relatively new to robotics in a league, but I have been tinkering with electronics for as long as I can remember. I play many instruments, such as piano, trumpet, bass and drums. I became very interested in Web Development recently, and this website is one of my latest works. Though this year is different due to the pandemic, VEX is still very fun. I can't wait until the upcoming years where I can become more involved."
 }
+const EthanSterling: User = {
+    name: {first: "Ethan", last: "Sterling"},
+    roles: ["Build"],
+    photo: EthanSterlingPng,
+    bio: "I'm a junior at Millburn High School. This is my third year on 7405N as a builder. In addition to Millburn Robotics Team, I play soccer for Millburn High School JV team, the Millburn Unified Team, and Steel United. Last year I earned a varsity letter in community service with 120 hours of community service. Currently, I am the Co-President of the Interfaith Food Pantry of the Oranges Teen Board. "
+}
+const BruceZhang: User = {
+    name: {first: "Bruce", last: "Zhang"},
+    roles: ["Build", "Psuedocode"],
+    photo: BruceZhangPng,
+    bio: "Hi, I'm Bruce, and this is my third year of VEX. I joined Millburn Robotics on a whim during the Turning Point season with 7405P, and since then I have been hooked on creating innovative, sturdy, and efficient designs. I've always had a passion for design, and robotics is the perfect place to spend that energy. I think the best thing about VRC is that it isn't a pure design competition, as a team must also be competent in human factors to succeed. Outside of robotics, I am a fencer, and also work on many random projects that pique my interest; small things like rings, fountain pens, keyboards and watches."
+}
+const DeenaWeiss: User = {
+    name: {first: "Deena", last: "Weiss"},
+    roles: ["Code"],
+    photo: DeenaWeissPng,
+    bio: "Hi, I’m Deena, I’m on 7405M and I’m a sophomore at Millburn. I’ve only been on robotics from this year, and I haven’t been coding for very long, but I’ve learned quickly, and learning about all the different aspects of the code had been really fun and interesting. I really got into VEX at the states competition last year. When I saw how the different parts of the robot all came together to complete the challenge and the strategy behind the game, I really wanted to learn more about it. I’ve been intrigued by stem and engineering for as long as I can remember, so robotics felt like the right thing to do, and I was right about that. "
+}
+const NikhilPrakash: User = {
+    name: {first: "Nikhil", last: "Prakash"},
+    roles: ["Build"],
+    photo: NikhilPrakashPng,
+    bio: "This is my second year of doing robotics at Millburn High School. I love to fence, play violin, and game. I first joined Millburn Robotics because I've always had a passion for making things that solve problems. I also love competing, so by joining Millburn Robotics I was able to put both of the things I love to do, together. Despite the pandemic, I think our team will do really well this year."
+}
 export const TeamInfo: Map<string, Team> = new Map([
     ['7405K', {
         league: 'VEX',
@@ -214,20 +242,20 @@ export const TeamInfo: Map<string, Team> = new Map([
         captains: [MelanieHerbert,  DevNadkarni],
         name: '7405M',
         description: "7405M, or Millburn Mercury, is a VEX robotics team competition in this year's Change Up Competition.  At the 2020 VEX States competition the team qualified for Worlds through both the Excellence Award and winning Tournament Finalists. Our goal for the future is mainly to grow and develop our problem solving, computer science, and mechanical building skills, in creating a competitive robot this year. ",
-        members: [KevinXu, ConnorVanderploeg, SahilShah]
+        members: [KevinXu, ConnorVanderploeg, SahilShah, DeenaWeiss]
     }],
         ['7405N', {
         league: 'VEX',
         captains: [AryanDugar, KeshabGatehouse],
         name: '7405N',
         description: 'As cliché as it sounds, N is all about working hard and playing hard. We’re usually the loudest team in the Mill because of our joking, laughing, music, and heated arguments. We also have a tendency to pull members of other teams into our shenanigans as well. Despite our lighthearted attitude, we still put in the time and effort necessary to succeed in such a competitive activity, and it showed in our Tower Takeover performance: 23rd in world skills, State Semifinalists, and Cherry Hill Tournament Champions. We hope to keep approaching robotics with the same mindset as we tackle the challenges of COVID and the Change Up season.',
-        members: [IshaanSalhotra, BrandonQiao, NirvanPanjwani, ZenBhutani]
+        members: [IshaanSalhotra, BrandonQiao, NirvanPanjwani, ZenBhutani,EthanSterling, BruceZhang]
     }],
         ['7405X', {
         league: 'VEX-AI',
         captains: [SahilShah, SahilSirdeshpande],
         name: '7405X',
         description: "Leading a team for the VEX AI Competition this year has turned out to be an adventure. Since this competition has not existed in the past, our team has constantly found new ways to innovate the design and code for our robots. From artificial intelligence to pathfinding systems, the software we wrote this year has allowed each code member to manifest their expertise while learning new concepts from others in the process. We are all excited to compete this season!",
-        members: [JoeySorkin, KaylaWang, AlexBarker, AaronAgarwal, MohanSubramanian]
+        members: [JoeySorkin, KaylaWang, BruceZhang, AlexBarker, AaronAgarwal, NikhilPrakash, MohanSubramanian]
     }]
 ])
