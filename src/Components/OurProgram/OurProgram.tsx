@@ -46,9 +46,11 @@ export default function OurProgram() {
               <Typography className={classes.text} variant="body1">
                 We are a group of creative, innovative, and passionate students
                 who work together in hope to accomplish the task of
-                building/programming a flawless robot. We strive to put an
-                immense amount of effort and time into our robots as well as
-                still hold our strong sportsmanship and values.
+                building/programming a flawless robot. We put an immense amount
+                of effort and time into our robots as well as still hold our
+                strong sportsmanship and values. We plan to overcome challenges
+                together and learn from eachothers mistakes. Millburn Robotics
+                allows us to grow not only as an engineer, but also as a person.
                 <br />
                 <br />
               </Typography>
