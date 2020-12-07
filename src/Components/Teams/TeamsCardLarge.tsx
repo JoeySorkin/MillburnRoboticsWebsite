@@ -33,7 +33,7 @@ export default function TeamsCardLarge() {
       </Fade>
       <Switch />
       <Route exact path={path}>
-        Please select a route
+        Please select a team
       </Route>
       <Route path={`${path}/:teamId`}>
         <TeamDisplay />

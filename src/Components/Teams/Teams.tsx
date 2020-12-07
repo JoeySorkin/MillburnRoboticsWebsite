@@ -5,6 +5,8 @@ import TeamsCard from "./TeamsCard";
 import colors from "../Core/colors";
 import Fade from "react-reveal/Fade";
 import { Typography } from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 export default function Teams() {
   const responsive = {
@@ -30,11 +32,16 @@ export default function Teams() {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
-
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <div style={{ height: "100%", margin: "20px 6vw" }} id="teams">
       <Fade up>
-        <Typography align="center" variant="h1">
+        <Typography
+          {...(matches ? 'style={{ fontSize: "20vw" }}' : "")}
+          align="center"
+          variant="h1"
+        >
           Our Teams
         </Typography>
         <br />

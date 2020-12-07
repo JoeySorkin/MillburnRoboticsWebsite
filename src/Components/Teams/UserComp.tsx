@@ -26,7 +26,6 @@ function truncateString(str, num) {
   return str.slice(0, num) + "...";
 }
 
-truncateString("A-tisket a-tasket A green and yellow basket", 8);
 export default function UserComp(props: UserProps) {
   const person = props.User;
   const handleClick = () => {};
@@ -60,6 +59,17 @@ export default function UserComp(props: UserProps) {
       alignItems: "center",
     },
     cardBody: {
+      margin: "0px 10px",
+      display: "flex",
+      height: "300px",
+      justifyContent: "left",
+      flexWrap: "wrap",
+      listStyle: "none",
+      padding: theme.spacing(0.5),
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+    },
+    ModalBody: {
       margin: "0px 10px",
       display: "flex",
       justifyContent: "left",
@@ -100,7 +110,7 @@ export default function UserComp(props: UserProps) {
               alt={person.name.first + " " + person.name.last}
               src={person.photo}
             />
-            <Typography align="center" style={{ width: "50%" }} variant="h6">
+            <Typography style={{ marginLeft: "2px" }} variant="h6">
               {person.name.first + " " + person.name.last}
             </Typography>
           </div>
@@ -120,7 +130,7 @@ export default function UserComp(props: UserProps) {
               ""
             )}
             <Typography variant="body1">
-              {truncateString(person.bio, 200)}
+              {[truncateString(person.bio, 180)]}
             </Typography>
             <Button onClick={handleOpen} className={classes.readmore}>
               Read More
@@ -157,7 +167,7 @@ export default function UserComp(props: UserProps) {
                     {person.name.first + " " + person.name.last}
                   </Typography>
                 </div>
-                <div className={classes.cardBody}>
+                <div className={classes.ModalBody}>
                   {person.roles.map((data, index) => {
                     return (
                       <li key={index}>
