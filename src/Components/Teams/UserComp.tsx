@@ -9,6 +9,7 @@ import {
   Button,
   Backdrop,
 } from "@material-ui/core/";
+import { Event } from "../Core/Tracker";
 import { makeStyles } from "@material-ui/core/styles";
 import { Name, User } from "./Members";
 import MuiFade from "@material-ui/core/Fade";
@@ -132,7 +133,17 @@ export default function UserComp(props: UserProps) {
             <Typography variant="body1">
               {[truncateString(person.bio, 180)]}
             </Typography>
-            <Button onClick={handleOpen} className={classes.readmore}>
+            <Button
+              onClick={() => {
+                handleOpen();
+                Event(
+                  "LEARN MORE",
+                  `Clicked on ${person.name.first + " " + person.name.last}`,
+                  "TEAMS PAGE"
+                );
+              }}
+              className={classes.readmore}
+            >
               Read More
             </Button>
           </div>
