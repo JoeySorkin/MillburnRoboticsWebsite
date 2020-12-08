@@ -9,7 +9,6 @@ import {
   Button,
   Backdrop,
 } from "@material-ui/core/";
-import { Event } from "../Core/Tracker";
 import { makeStyles } from "@material-ui/core/styles";
 import { Name, User } from "./Members";
 import MuiFade from "@material-ui/core/Fade";
@@ -136,11 +135,6 @@ export default function UserComp(props: UserProps) {
             <Button
               onClick={() => {
                 handleOpen();
-                Event(
-                  "LEARN MORE",
-                  `Clicked on ${person.name.first + " " + person.name.last}`,
-                  "TEAMS PAGE"
-                );
               }}
               className={classes.readmore}
             >

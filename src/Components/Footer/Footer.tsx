@@ -10,7 +10,6 @@ import {
 } from "@material-ui/core/";
 import colors from "../Core/colors";
 import { GitHub } from "@material-ui/icons";
-import { Event } from "../Core/Tracker";
 export default function Footer() {
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,7 +34,7 @@ export default function Footer() {
   }));
   const classes = useStyles();
   const sendAnalytics = () => {
-    Event("CLICK", "Clicked on joey's github!", "FOOTER");
+    //
   };
   return (
     <div className={classes.root}>

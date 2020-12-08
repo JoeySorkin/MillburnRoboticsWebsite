@@ -28,7 +28,6 @@ Here is a list of all of the libraries used and a brief description of their pur
 - **React-Multi-Carousel**: A library that provided a foundation for the Carousel used on the home page
 - **React-Particles-Js**: A library that provided a foundation for the particles seen in the hero of the site.
 - **React Reveal**: A library that provided animations and transitions as seen when the website is reloaded.
-- **React-GA**: A library that interfaced with google analytics so I can view metrics about the user experience
 
 _For more information, visit my package.json_
 

@@ -17,14 +17,19 @@ import ScrollToTop from "./Components/ScrollToTop";
 import ReactGA from "react-ga";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useEffect } from "react";
-import { init, PageView } from "./Components/Core/Tracker";
+import { createBrowserHistory } from "history";
 
 config({ ssrFadeout: true });
+ReactGA.initialize("G-Q0C0F5SBSK");
 function App() {
+  const history = createBrowserHistory();
   useEffect(() => {
-    init("G-Q0C0F5SBSK");
-    PageView();
+    ReactGA.pageview(window.location.pathname);
   }, []);
+  history.listen((location) => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+  });
   return (
     <div className="App">
       <ThemeProvider theme={theme}>

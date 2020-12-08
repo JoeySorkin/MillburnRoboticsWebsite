@@ -116,7 +116,8 @@ export default function OurProgram() {
                 prefix 7405. Both Mr. Farrell and Mr. Seibert assist students in
                 executing their plans and ideas. With a large group of students,
                 it is important to have reliable and capable teachers to mentor
-                and run the organization.
+                and run the organization. Along with this, we are proudly
+                sponsored by parents of robotics team members.
               </Typography>
             </Paper>
           </Box>
