@@ -1,6 +1,6 @@
 # Millburn Robotics Website
 
-## https://millburn-robotics-2020.web.app/
+## https://millburnrobotics.tech
 
 Hi! Chances are, if you are reading this, you are wondering how the Millburn Robotics Website was made. In summary, it was made in the span of around a week. It is my first full-fledged React website, and was done using typescript.
 
