@@ -1,10 +1,10 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-import colors from './Components/Core/colors'
+import { createMuiTheme } from "@material-ui/core/styles";
+import colors from "./Components/Core/colors";
 let theme = createMuiTheme({
   palette: {
     primary: {
       main: colors.blue,
-      contrastText: '#ffffff'
+      contrastText: "#ffffff",
     },
     secondary: {
       main: colors.pink,
@@ -13,6 +13,10 @@ let theme = createMuiTheme({
 });
 theme.typography.h1 = {
   fontFamily: "Spartan",
-  fontSize: "100px"
-}
-export default theme
+  fontSize: "75px",
+  [theme.breakpoints.down("xs")]: {
+    fontSize: "50px",
+  },
+};
+
+export default theme;

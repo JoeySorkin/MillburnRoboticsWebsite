@@ -63,7 +63,7 @@ export default function Teams() {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-0-px"
         >
-          {["7405K", "7405R", "7405M", "7405N", "7405X"].map((elem) => (
+          {["7405M", "7405R", "7405K", "7405N", "7405X"].map((elem) => (
             <TeamsCard color={colors.orange} name={elem}>
               Hello!
             </TeamsCard>

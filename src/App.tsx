@@ -14,7 +14,8 @@ import config from "react-reveal/globals";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Footer from "./Components/Footer/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
-
+import YoutubeEmbed from "./Components/SubHero/YoutubeEmbed";
+// import
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 config({ ssrFadeout: true });
@@ -72,10 +73,10 @@ function Home() {
       <div style={{ overflowX: "hidden" }}>
         <Hero />
       </div>
-
-      <br />
+      <YoutubeEmbed embedId="bgLSV98VkAk" />
       <br />
       <SubHero />
+
       <OurProgram />
       <br />
       <br />
@@ -151,4 +152,5 @@ function ContactPage() {
     </>
   );
 }
+
 export default App;
