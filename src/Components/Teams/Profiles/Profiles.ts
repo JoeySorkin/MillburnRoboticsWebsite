@@ -1,261 +1,359 @@
-import { User, Name, Team } from '../Members';
-import AryanDugarPng from './AryanDugar.png'
-import IshaanSalhotraPng from './IshaanSalhotra.png'
-import MohanSubramanianPng from './MohanSubmarinian.png'
-import AaronAgarwalPng from './AaronAgarwal.png'
-import AbhiSinghPng from './AbhiSingh.png'
-import AidanKumarPng from './AidanKumar.png'
-import AlexBarkerPng from './AlexBarker.png'
-import DevNadkarniPng from './DevNadkarni.png'
-import GiaBhutaniPng from './GiaBhutani.png'
-import IshaanGhoshPng from './IshaanGhosh.png'
-import KaiStonePng from './KaiStone.png'
-import KaylaWangPng from './KaylaWang.png'
-import KeshabGatehousePng from './KeshabGatehouse.png'
-import KevinXuPng from './KevinXu.png'
-import LiamPilarskiPng from './LiamPilarski.png'
-import MelanieHerbertPng from './MelanieHerbert.png'
-import NatalieGreenspanPng from './NatalieGreenspan.png'
-import SahilShahPng from './SahilShah.png'
-import SahilSirdeshpandePng from './SahilSirdeshpande.png'
-import VictorDongPng from './VictorDong.png'
-import ZaynRekhiPng from './ZaynRekhi.png'
-import ZenBhutaniPng from './ZenBhutani.png'
-import NirvanPanjwaniPng from './NirvanPanjwani.png'
-import BrandonQiaoPng from './BrandonQiao.png'
-import LiweiSunPng from './LiweiSun.png'
-import JoeySorkinPng from './JoeySorkin.png'
-import ArmaanBassiPng from './ArmaanBassi.png'
-import BruceZhangPng from './BruceZhang.png'
-import DeenaWeissPng from './DeenaWeiss.png'
-import NikhilPrakashPng from './NikhilPrakash.png'
-import EthanSterlingPng from './EthanSterling.png'
-const AryanDugar: User = {
-    name: {first: 'Aryan', last: 'Dugar'},
-    photo: AryanDugarPng,
-    roles: ['Build', 'Code'],
-    bio: "Robotics has been a passion of mine for a while. I started doing robotics in 8th grade by participating in the Vex IQ challenges and graduated to Vex EDR when I reached high school. As a programmer, I am responsible for the robot's autonomous movements. To see the complex principles and mathematics in code translate to successful real world results always fascinates me. Though I am a programmer, I enjoy building as well.  The idea of creating a robot with only your intuition and hard work and then taking that robot to competitions is really appealing to me. The adrenaline rush you feel when your hours of hard work are validated by a victory at a tournament is a rush unlike any other. "
-}
+import { User, Name, Team } from "../Members";
+import AryanDugarPicture from "./AryanDugar.png";
+import AaravDugarPicture from "./AaravDugar.png";
+import AidanKumarPicture from "./AidanKumar.png";
+import AlexanderBarkerPicture from "./AlexanderBarker.png";
+import AmyPeckelPicture from "./AmyPeckel.jpg";
+import ArmaanBassiPicture from "./ArmaanBassi.jpeg";
+import BeckerKotobPicture from "./BeckerKotob.png";
+import BenjaminLiPicture from "./BenjaminLi.jpg";
+import BrandonQiaoPicture from "./BrandonQiao.png";
+import BurkeSeegerPicture from "./BurkeSeeger.jpg";
+import CaseyHeinPicture from "./CaseyHein.jpg";
+import ChristopherBaxterPicture from "./ChristopherBaxter.jpeg";
+import ConnorVanderploegPicture from "./ConnorVanderploeg.jpeg";
+import DavidManPicture from "./DavidMan.jpeg";
+import EricDongPicture from "./EricDong.jpg";
+import EthanParkPicture from "./EthanPark.jpeg";
+import GiaBhutaniPicture from "./GiaBhutani.jpeg";
+import GrantZhouPicture from "./GrantZhou.png";
+import IshaanSalhotraPicture from "./IshaanSalhotra.jpg";
+import JiaPanjwaniPicture from "./JiaPanjwani.jpeg";
+import KevinXuPicture from "./KevinXu.jpg";
+import LexieLeePicture from "./LexieLee.jpg";
+import LiamPilarskiPicture from "./LiamPilarski.png";
+import LukasPilarskiPicture from "./LukasPilarski.jpeg";
+import MaeSubramanianPicture from "./MaeSubramanian.jpeg";
+import NathanielThomasPicture from "./NathanielThomas.jpeg";
+import NikhilPrakashPicture from "./NikhilPrakash.png";
+import NirvanPanjwaniPicture from "./NirvanPanjwani.png";
+import RichardDongPicture from "./RichardDong.jpeg";
+import RitvikGuptaPicture from "./RitvikGupta.jpg";
+import RiyaSinhaPicture from "./RiyaSinha.jpeg";
+import SahmRahmanPicture from "./SahmRahman.png";
+import SophiaKlymchukPicture from "./SophiaKlymchuk.jpg";
+import SunoyMishraPicture from "./SunoyMishra.jpg";
+import TanushShahPicture from "./TanushShah.jpg";
+import VictorDongPicture from "./VictorDong.jpg";
+import WayneXiongPicture from "./WayneXiong.jpg";
+import YujieSunPicture from "./YujieSun.jpg";
+import YuwenLiangPicture from "./YuwenLiang.jpg";
+import JoeySorkinPicture from "./JoeySorkin.jpg";
+
 const IshaanSalhotra: User = {
-    name: {first: 'Ishaan', last: 'Salhotra'},
-    photo: IshaanSalhotraPng,
-    roles: ['Code'],
-    bio: "I am a Junior, and I have been on VEX Robotics teams for the past 4 years. I've been programming since elementary school, and I get to use what I've learned when coding the robot's functions and autonomous paths. I like robotics because I get to work with a group of friends to build and code a complex machine that can go to competitions and compete against other teams. Even though scoring higher and making the bot more efficient is challenging, competitions are always fun and make it worth it. Aside from robotics, I love to play the drums, especially funk, Latin, and jazz."
-}
-const MohanSubramanian: User = {
-    name: {first: 'Mohan', last: 'Subramanian'},
-    photo: MohanSubramanianPng,
-    roles: ['Build'],
-    bio: "Hi! I'm Mohan, your local enby computer and electronics student who lives at the mill. I have had a passion in robotics and electronics since the day I lost a toy behind a TV cabinet. I love to work with electronics, currently I'm working on building a 20 cell custom li-ion battery pack to become a portable power supply with a bunch of different outputs and using safeties with nfc cards to verify the device uses a certain voltage before powering it. I've been doing robotics since 5th grade, competitively specifically in 5th, 8th, 9th grade, and this year. Aside from robotics, I bike a lot and I also play the tenor and alto saxophone."
-}
-const LiamPilarski: User = {
-    name: {first: 'Liam', last: 'Pilarski'},
-    photo: LiamPilarskiPng,
-    roles: ['Code'],
-    bio: "I enjoy robotics because its a chance for me to work in a team environment to problem solve. My other hobbies include programming, and I have participated in numerous hackathons over the years. Robotics is a welcome break from pure programming because it allows me to physically handle a robot, as the design process interests me greatly as well. It is also a place of community, as I have made many good friends during my participation at Millburn Robotics, both on my team 7405K and the other teams in the organization. This has been my third year participating in competitive VEX robotics, and I have no plans to stop in the near future!"
-}
-const KeshabGatehouse: User = {
-    name: {first: 'Keshab', last: 'Gatehouse'},
-    photo: KeshabGatehousePng,
-    roles: ['Build', 'Code'],
-    bio: "I’m Keshab, I’m a senior at MHS, and I’ve been doing robotics since elementary school. I’ve run the gamut of positions in robotics (coder, builder, driver, captain), so I think I have a really solid understanding of what goes into a successful team. I’ve also learned a lot through robotics, whether it’s technical knowledge or universal skills like leadership. In general, it’s something I’m super passionate about, and some of my best high school memories are of time spent with my teammates in the Mill or at competitions. Outside of robotics, I’m a runner for the cross-country team and a pianist. "
-}
-const GiaBhutani: User = {
-    name: {first: 'Gia', last: 'Bhutani'},
-    photo: GiaBhutaniPng,
-    roles: ['Code'],
-    bio: "My name is Gia Bhutani. I am a freshman at Millburn High School. I am one of the coders on team 7405K. I also help in doing the notebook and help in CAD. I have been doing robotics (in general) for 3 years."
-}
-const AbhiSingh: User = {
-    name: {first: 'Abhi', last: 'Singh'},
-    photo: AbhiSinghPng,
-    roles: ['Build'],
-    bio: "I am a current junior and this is my fourth year of robotics at Millburn. I enjoy robotics mainly because of the competition and many challenges, along with working with a team. My favorite VEX game of all time was turning point due to the intense competition and viability of many different unique designs. Some of my frequent hobbies are playing video games and music. "
-}
-const KaylaWang: User = {
-    name: {first: 'Kayla', last: 'Wang'},
-    photo: KaylaWangPng,
-    roles: ['Code'],
-    bio: "I'm a sophomore at Millburn High School and my hobbies include playing tennis and oboe as well as coding. I have an older sister and a gecko named Kepler. Both my parents are computer programmers so I've liked computer science since I was little. I like the challenge of solving problems and critical thinking."
-}
-const BrandonQiao: User = {
-    name: {first: 'Brandon', last: 'Qiao'},
-    photo: BrandonQiaoPng,
-    roles: ['Build'],
-    bio: "Before high school, I never had an extreme interest in robotics. It was after I saw a presentation done by the world winning team during eighth grade that sparked my interest in the club. Since then I definitely do not regret joining this team because it provides me with a fun way to spend time outside of school. "
-}
-const SahilSirdeshpande: User = {
-    name: {first: 'Sahil', last: 'Sirdeshpande'},
-    photo: SahilSirdeshpandePng,
-    roles: ['Build'],
-    bio: "Hello! This is my third year doing robotics at Millburn. I am a junior and a captain of VexAi also helping out on 7405K! I enjoy editing videos and filmmaking as well as woodworking and listening to music. I especially enjoy robotics for the engineering experience and the cool people I get to work with. "
-}
-const AidanKumar: User = {
-    name: {first: 'Aidan', last: 'Kumar'},
-    roles: ["Build"],
-    bio: "My name is Aidan Kumar, I am currently a freshman at Millburn High School. This is my first year on VEX robotics. I primarily work on building the bot whenever needed, along with CAD and design. My hobbies include fencing and learning about science. I look forward to a great season with my team this year.",
-    photo: AidanKumarPng,
-}
-const AaronAgarwal: User = {
-    name: {first: 'Aaron', last: 'Agarwal'},
-    roles: ["Build"],
-    bio: "Robotics has always been a hobby of mine because of the hands on experience. Watching your robot that you took many many hours to create is always an amazing sensation. I have done different types of robotics for about 3 years before high school. Other than that, I have hobbies such as debate, trumpet, soccer, and basketball. I am currently in 9th grade. ",
-    photo: AaronAgarwalPng
-}
-const NirvanPanjwani: User = {
-    name: {first: 'Nirvan', last: 'Panjwani'},
-    roles: ['Build'],
-    photo: NirvanPanjwaniPng,
-    bio: "I've been doing robotics for 4 years now, I started in 8th grade, however, I moved to Millburn in 10th grade. My role on the team is seen as kind of a \"creative director\" because most of my ideas are really crazy and usually don't pan out. I work a lot on the pre-season bot and spend the rest of the season scouting other teams and coaching the drive team. I also usually control visual aspects of the bot, like last year we had a lot of the bot in pink tape, and we had all our rubber bands blue. We also added an acrylic backplate that was custom laser cut, that I designed and decorated. Overall, my experience at Millburn robotics has been really fun, and I'm really going to miss it when I graduate.",
-}
-const NatalieGreenspan: User = {
-    name: {first: 'Natalie', last: 'G. K.'},
-    roles: ['Build', 'Code'],
-    photo: NatalieGreenspanPng,
-    bio: "Hi my name is Natalie! I enjoy robotics because it is both an outlet for creative and critical thinking while also being a great community of students and teachers to work and socialize with. I enjoy music, Muay Thai, MMA, reading, hiking, drawing, and spending time with my family. I have been doing vex on the Millburn high school team for two years and plan to do so for the remainder of my time at Millburn high school. Prior to this I did vex robotics with robot revolution and have built robots and small machines for a majority of my life. I am known for my persistence toward things I am passionate about and for being loyal."
-}
-const LiweiSun: User = {
-    name: {first: 'Liwei', last: 'Sun'},
-    roles: ['Build', 'Code'],
-    photo: LiweiSunPng,
-    bio: "I've been doing robotics since third grade when I won a rice cooker at a LEGO NXT competition in China. I started VEX during the In The Zone season, so this is my 4th year doing VEX. Favorite parts of Millburn robotics (at least before COVID) are the team atmosphere and the machining resources that we have at our disposal. I like how VEX includes the ability to cut and bend metal allows for some extra flexibility for designs. Favorite VEX part: linear motion kits because they can be used to make rubber band guns. My hobbies outside of robotics include doing chemistry experiments."
-}
-const DevNadkarni: User = {
-    name: {first: 'Dev', last: 'Nadkarni'},
-    roles: ['Build'],
-    photo: DevNadkarniPng,
-    bio: "I’m Dev Nadkarni, one of the co-captains of 7405M. This year, I hope to share some of my knowledge with the other team members, and help form a team that is tight-knit and high performing. Change Up is my third and final year of competing in VEX Robotics. One of the main aspects of robotics that I enjoy is seeing the performance of the robot my team members and I have spent months working on, and knowing that the multiple iterations of all parts of the robot have paid off (at least to a certain degree). This season, my main tasks will be to help build and design the robot. I’m looking forward to the rest of this competition year and seeing how everything will turn out."
-}
-const KevinXu: User = {
-    name: {first: 'Kevin', last: 'Xu'},
-    roles: ['Build'],
-    photo: KevinXuPng,
-    bio: "I'm Kevin, and this is my second year on Millburn Robotics. My favorite part of robotics is getting to see all the hard work and time that me and my team have put into the bot pay off at a competition, and coming up with build ideas and solutions always hurts my brain (in a good way). Other than robotics, I like playing video games (original, I know), as well as playing clarinet and fencing. I have a sense of humor that has been characterized as \"abrasive\" by my friends, rather sarcastically. Other than that, there's not much else to say."
-}
-const MelanieHerbert: User = {
-    name: {first: 'Melanie', last: 'Herbert'},
-    roles: ['Build', 'Code'],
-    photo: MelanieHerbertPng,
-    bio: 'I’m Melanie. I’m one of the co-captains on 7405M and aspire to create and lead a collaborative and well-balanced team this year. This is my fourth (and senior) year competing on a VEX robotics team and I work on both coding mainly autonomous along with building and designing. My favorite aspects of robotics include problem solving along with being able to collaborate with others. I’m very excited for this year and am looking forward to working with a great team!'
-}
-const VictorDong: User = {
-    name: {first: 'Victor', last: 'Dong'},
-    roles: ['Build'],
-    bio: 'I am a builder. I built with lego mindstorms in elementary. I did the FTC build system in middle school. I started Vex in my freshman year. I like mountain biking and skiing.',
-    photo: VictorDongPng,
-}
-const AlexBarker: User = {
-    name: {first: 'Alex', last: 'Barker'},
-    roles: ['Code'],
-    photo: AlexBarkerPng,
-    bio: "I'm a junior, and this is my second year of MHS Robotics. I love to code, game, and play cello in my free time. Robotics is great because of the problem solving and coding aspects, especially being able to see your finished bot perform tasks exactly how you wanted it to. Almost all of my team members are people I've worked with before, and I'm really excited for what we will be able to do and accomplish because we understand each other so well. As one of the first Millburn VexAI teams, I think we'll be able to leave a blazing new trail!"
-}
-const ZaynRekhi: User = {
-    name: {first: 'Zayn', last: 'Rekhi'},
-    roles: ['Code'],
-    photo: ZaynRekhiPng,
-    bio: "Some of my interests include Machine Learning as well as robotics. In addition, I really like to play Among Us as well as Minecraft in my free time. I have been apart of Robotics for the last 4 years now - I did 2 years of VEX IQ as well as 2 years of VRC, including this year. Machine Learning is a hobby that I developed since I found it to be very fascinating. As one of the programmers on my team, I am really excited for the upcoming season with my awesome team."
-}
-const SahilShah: User = {
-    name: {first: 'Sahil', last: 'Shah'},
-    roles: ['Code'],
-    photo: SahilShahPng,
-    bio: "I am Sahil Shah, and I'm a senior and the code captain of 7405X. I have been captain for the past two years and have been on Millburn Robotics for the past four years. I first joined robotics due to my passion for electronics, and I have developed my skills continuously alongside my teammates. In addition to software design, I also enjoy designing complex contraptions using CAD. Outside of robotics, I was also the captain of Millburn's Rocketry team in my junior year.  "
-}
-const IshaanGhosh: User = {
-    name: {first: 'Ishaan', last: 'Ghosh'},
-    roles: ['Code'],
-    photo: IshaanGhoshPng,
-    bio: "This year is my 2nd year of robotics. I joined robotics because I thought it would be a cool way to learn more about coding while working in a team. Over the course of my first year, I learned that robotics was more difficult than I could've imagined, but it was also the most fun and satisfaction I've ever had in my life. I learned not just a ton about coding, but also how to work in a team and other skills. I love robotics today as I'm still learning new things, and I've come to really enjoy working at the challenge it offers. Other than robotics, I like running, reading, and spending time with my friends."
-}
-const KaiStone: User = {
-    name: {first: 'Kai', last: 'Stone'},
-    roles: ['Build'],
-    photo: KaiStonePng,
-    bio: "My name's Kai Stone, and this is my third year formally doing robotics, and my first year doing it at Millburn High School. I do a lot of art in my spare time, and I'm hoping to apply some of my skills to the team, in the form of notebook design. In the past, my notebook has won a creative notebook award at a competition, and I'm hoping to achieve an award for Millburn too."
-}
-const ZenBhutani: User = {
-    name: {first: "Zen", last: "Bhutani"},
-    roles: ['Build'],
-    photo: ZenBhutaniPng,
-    bio: "I'm a Junior in high school and this is my third year doing Vex. I was on 4611G for my first year and I have been on 7405N ever since. I really enjoy being a builder and working on the mechanical component of the robot, but I also really like the strategic aspect of the competition. ",
-}
-const ConnorVanderploeg: User = {
-    name: {first: "Conor", last: "Vanderploeg"},
-    roles: ['Build'],
-    photo: 'NA',
-    bio: "Hello! My name is Connor and I am a builder for 7405M. I have been doing robotics for about 3 or 4 years and I started with lego mindstorm but really started by getting into vex IQ. I like robotics because I like figuring out challenges and problems which are widespread in robotics. Some more of my other hobbies and interests are playing video games and hiking and I enjoy cars and racing. I am good at problem solving and coming up with creativity solutions."
-}
-const ArmaanBassi: User = {
-    name: {first: 'Armaan', last: "Bassi"},
-    roles: ['Build'],
-    photo: ArmaanBassiPng,
-    bio: "Hey! My name is Armaan Bassi and I have been building in VEX robotics for 3 years. Prior, I did VEX IQ since I was in 4th grade and have developed a passion for robotics and the STEM field as a whole. While doing VEX during 8th grade and freshman year, I was a builder, documentation lead, and scouting lead. I enjoy doing robotics so much because I love to feel the satisfaction of something my team has built finally working. To add on, one of my favorite parts about robotics is that I get to make so many new friends and connections, whether it be with different organizations at a competition or just within Millburn Robotics. Some of my hobbies outside of school and robotics include track and field, percussion, video games, and just doing random programming projects. "
-}
+  name: { first: "Ishaan", last: "Salhotra" },
+  roles: ["Code"],
+  bio: "My name is Ishaan Salhotra, and I am a programmer for team 7405N and a senior. I like to code, play the drums, and watch soccer. My experience with robotics started in the 7th grade when I joined my first VEX robotics team, and I have loved it ever since.I enjoy being able to collaborate with friends on creating and programming a robot to compete with other passionate teams in incredibly fun events, and I find the design process mentally challenging and rewarding.",
+  photo: IshaanSalhotraPicture,
+};
+const AryanDugar: User = {
+  name: { first: "Aryan", last: "Dugar" },
+  photo: AryanDugarPicture,
+  roles: ["Build", "Code"],
+  bio: "Robotics has been a passion of mine for a while. I started doing robotics in 8th grade by participating in the Vex IQ challenges and graduated to Vex EDR when I reached high school. As a programmer, I am responsible for the robot's autonomous movements. To see the complex principles and mathematics in code translate to successful real world results always fascinates me. Though I am a programmer, I enjoy building as well.  The idea of creating a robot with only your intuition and hard work and then taking that robot to competitions is really appealing to me. The adrenaline rush you feel when your hours of hard work are validated by a victory at a tournament is a rush unlike any other. ",
+};
 const JoeySorkin: User = {
-    name: {first: "Joey", last: "Sorkin"},
-    roles: ["Code"],
-    photo: JoeySorkinPng,
-    bio: "Hello! I am Joey Sorkin. I love music, coding, and biking. I am relatively new to robotics in a league, but I have been tinkering with electronics for as long as I can remember. I play many instruments, such as piano, trumpet, bass and drums. I became very interested in Web Development recently, and this website is one of my latest works. Though this year is different due to the pandemic, VEX is still very fun. I can't wait until the upcoming years where I can become more involved."
-}
-const EthanSterling: User = {
-    name: {first: "Ethan", last: "Sterling"},
-    roles: ["Build"],
-    photo: EthanSterlingPng,
-    bio: "I'm a junior at Millburn High School. This is my third year on 7405N as a builder. In addition to Millburn Robotics Team, I play soccer for Millburn High School JV team, the Millburn Unified Team, and Steel United. Last year I earned a varsity letter in community service with 120 hours of community service. Currently, I am the Co-President of the Interfaith Food Pantry of the Oranges Teen Board. "
-}
-const BruceZhang: User = {
-    name: {first: "Bruce", last: "Zhang"},
-    roles: ["Build", "Pseudocode"],
-    photo: BruceZhangPng,
-    bio: "Hi, I'm Bruce, and this is my third year of VEX. I joined Millburn Robotics on a whim during the Turning Point season with 7405P, and since then I have been hooked on creating innovative, sturdy, and efficient designs. I've always had a passion for design, and robotics is the perfect place to spend that energy. I think the best thing about VRC is that it isn't a pure design competition, as a team must also be competent in human factors to succeed. Outside of robotics, I am a fencer, and also work on many random projects that pique my interest; small things like rings, fountain pens, keyboards and watches."
-}
-const DeenaWeiss: User = {
-    name: {first: "Deena", last: "Weiss"},
-    roles: ["Code"],
-    photo: DeenaWeissPng,
-    bio: "Hi, I’m Deena, I’m on 7405M and I’m a sophomore at Millburn. I’ve only been on robotics from this year, and I haven’t been coding for very long, but I’ve learned quickly, and learning about all the different aspects of the code had been really fun and interesting. I really got into VEX at the states competition last year. When I saw how the different parts of the robot all came together to complete the challenge and the strategy behind the game, I really wanted to learn more about it. I’ve been intrigued by stem and engineering for as long as I can remember, so robotics felt like the right thing to do, and I was right about that. "
-}
+  name: { first: "Joey", last: "Sorkin" },
+  roles: ["Code"],
+  bio: "My name is Joey Sorkin, and this is my second year on VEX. I have always enjoyed programming, and I find that VEX provides me with an outlet to see theory turn into practice. As I participate in VEX, I learn more about working with a team as well as the design processes. I really enjoy VEX because of how much I learn as well as the competitions which provides opportunities to see hard work pay off. ",
+  photo: JoeySorkinPicture,
+};
+const YujieSun: User = {
+  name: { first: "Yujie", last: "Sun" },
+  roles: ["Build"],
+  bio: "Hi, I am Derek Sun from Team 7405K Kinetic. I am very interested in robotics; I have been learning robotics and participating in competitions since I was in second grade. This is my first year in VEX. I mainly contribute in building the robot and using my noteworthy math and physics knowledge to aid the design of the robot. Nearly all of my after school hours are dedicated to robotics, as I not only enjoy the sense of achievement in building the robot but also like collaborating with my best friends.",
+  photo: YujieSunPicture,
+};
 const NikhilPrakash: User = {
-    name: {first: "Nikhil", last: "Prakash"},
-    roles: ["Build"],
-    photo: NikhilPrakashPng,
-    bio: "This is my second year of doing robotics at Millburn High School. I love to fence, play violin, and game. I first joined Millburn Robotics because I've always had a passion for making things that solve problems. I also love competing, so by joining Millburn Robotics I was able to put both of the things I love to do, together. Despite the pandemic, I think our team will do really well this year."
-}
+  name: { first: "Nikhil ", last: "Prakash" },
+  roles: ["Build"],
+  bio: "This is my third year of doing robotics at Millburn High School. I love to fence, play violin, and game. I first joined Millburn Robotics because I've always had a passion for making things that solve problems. I also love competing, so by joining Millburn Robotics I was able to put both of the things I love to do, together",
+  photo: NikhilPrakashPicture,
+};
+const YuwenLiang: User = {
+  name: { first: "Yuwen", last: "Liang" },
+  roles: ["Code"],
+  bio: "Hi! My name is Yuwen Liang. I also go by Kevin. I am a senior student at Millburn High School. This is my first year participating in VRC, so robotics as a whole is still very new to me. I really enjoy the environment of our robotics program. It allows for friendships across grade levels and for people with common interests to hang out and work towards a common goal together.",
+  photo: YuwenLiangPicture,
+};
+const AlexBarker: User = {
+  name: { first: "Alex", last: "Barker" },
+  roles: ["Code"],
+  bio: "I'm a senior, and this is my third year of MHS Robotics. I love to code, game, and play cello in my free time. Robotics is great because of the problem solving and coding aspects, especially being able to see your finished bot perform tasks exactly how you wanted it to. Almost all of my team members are people I've worked with before, and I'm really excited for what we will be able to do and accomplish because we understand each other so well. As one of the first Millburn VexAI teams, I think we'll be able to leave a blazing new trail!",
+  photo: AlexanderBarkerPicture,
+};
+const WayneXiong: User = {
+  name: { first: "Wayne", last: "Xiong" },
+  roles: ["Build"],
+  bio: "This is my first year doing VEX. I had experience with Lego Mindstorm and learning Java with a coding problem website called CodingBat before I joined th team. I was always passionate about legos and vbuilding my own electronically powered items, so when I heard about a chance to join Millburn Robotics, I took it. Every day I learn something new about engineering and design philosophy and I hope to apply it in my future endeavors. I hope to expand my library of skills and want to continue having fun with my teammates.",
+  photo: WayneXiongPicture,
+};
+const CaseyHein: User = {
+  name: { first: "Casey", last: "Hein" },
+  roles: ["Build"],
+  bio: "My name is Casey Hein. Though I have a role as a builder, I also have a very important role as a captain. My ability to assess, organize, and work with the rest of my team allows for not only a more enjoyable work environment, but also, what I beleive is a better team. This is my final year on Millburn Robotics, and I hope to make it a good one. ",
+  photo: CaseyHeinPicture,
+};
+const AaravDugar: User = {
+  name: { first: "Aarav", last: "Dugar" },
+  roles: ["Code", "Build"],
+  bio: "I am Aarav Dugar, a freshman who has been doing robotics for two years. I mostly do build but sometimes help with code. I really enjoy robotics because it encourages creativity and its a really fun space in which I get to work with my friends",
+  photo: AaravDugarPicture,
+};
+const AmyPeckel: User = {
+  name: { first: "Amy", last: "Peckel" },
+  roles: ["Build"],
+  bio: "Hi, my name is Amy. This is my first year on Millburn Robotics and I have definitely learned a lot. I enjoy building because it allows for different solutions to the same problem; it isn't always as easy as right and wrong. This provides opportunity for me to be creative and solve problems while working with others, allowing me to learn in the process.",
+  photo: AmyPeckelPicture,
+};
+const RichardDong: User = {
+  name: { first: "Richard", last: "Dong" },
+  roles: ["Code"],
+  bio: "My name is Richard. I am a freshman on Millburn Robotics. My favorite part about Millburn Robotics is coding - but not necessarily all of the time: I am truly interested in the small optimizations that I can create and errors I can dig out by investigating the lower level aspects of our code. I hope to continue to learn and thrive and VEX robotics, and look forward to a great year.",
+  photo: RichardDongPicture,
+};
+const ChristopherBaxter: User = {
+  name: { first: "Christopher", last: "Baxter" },
+  roles: ["Code", "Build"],
+  bio: "I work on designing, building, and coding the bots for 7405x. I love the process of trying to make the bots the best they can possibly be.",
+  photo: ChristopherBaxterPicture,
+};
+const RitvikGupta: User = {
+  name: { first: "Ritvik", last: "Gupta" },
+  roles: ["Code", "Build"],
+  bio: "Hey, my name is Ritvik and I am a freshman of VEX-AI. I",
+  photo: RitvikGuptaPicture,
+};
+const SahmRahman: User = {
+  name: { first: "Sahm", last: "Rahman" },
+  roles: ["Code"],
+  bio: "I’m an MHS Senior that loves mathematics and applying it through programming. I enjoyed robotics a lot for that reason; working on mapping the field and monitoring where everything is in a game was a lot of fun. It was challenging but really interesting seeing the geometry and algebra I learned come to life to tackle such complex problem",
+  photo: SahmRahmanPicture,
+};
+const NirvanPanjwani: User = {
+  name: { first: "Nirvan", last: "Panjwani" },
+  roles: ["Build"],
+  bio: "I've been doing robotics for 5 years now, I started in 8th grade, however, I moved to Millburn in 10th grade. My role on the team is seen as kind of a \"creative director\" because most of my ideas are really crazy and usually don't pan out. I work a lot on the pre-season bot and spend the rest of the season scouting other teams and coaching the drive team. I also usually control visual aspects of the bot, like two years ago we had a lot of the bot in pink tape, and we had all our rubber bands blue. We also added an acrylic backplate that was custom laser cut, that I designed and decorated. Overall, my experience at Millburn robotics has been really fun, and I'm really going to miss it if/when I graduate.",
+  photo: NirvanPanjwaniPicture,
+};
+const GrantZhou: User = {
+  name: { first: "Grant", last: "Zhou" },
+  roles: ["Build"],
+  bio: "I joined robotics for the experience in engineering, as well as the enjoyment of working with others to win competitions. I have knowledge in coding and building as I have been with other robotics teams for FLL and VEX IQ/ However, VEX VRC is a step up and I am ready to take on the new challenge.",
+  photo: GrantZhouPicture,
+};
+const LukasPilarski: User = {
+  name: { first: "Lukas", last: "Pilarski" },
+  roles: ["Build"],
+  bio: "Hi my name is Lukas Pilarski and I am currently a freshman at Millburn High School. The thing I enjoy most about robotics is probably working with the rest of my team to solve a problem we have with the robot. It's fun to work with other people on your team who you build a relationship with and use each other's ideas to help solve the issue. Not only does robotics help you think more creatively but it also gives you a comradery that you share with others on your team.",
+  photo: LukasPilarskiPicture,
+};
+const JiaPanjwani: User = {
+  name: { first: "Jia", last: "Panjwani" },
+  roles: ["Build"],
+  bio: "Hi! I am Jia, a freshman at Millburn High School. This is my second year competing in VEX as a builder. My favorite part of VEX is the ability to continue to improve the robot’s build throughout the season! ",
+  photo: JiaPanjwaniPicture,
+};
+const LexieLee: User = {
+  name: { first: "Lexie", last: "Lee" },
+  roles: ["Build"],
+  bio: "My name is Lexie Lee. I have been doing robotics, and even vex since fourth grade, and I plan to continue until my senior year. My favorite part about robotics is learning about how different aspects and parts work together. Learning new things along with being able to hang out with other robotics kids is why I love robotics",
+  photo: LexieLeePicture,
+};
+const DavidMan: User = {
+  name: { first: "David", last: "Man" },
+  roles: ["Code"],
+  bio: "I am David, a Sophomore on VEX-AI. This year I have not only learned more about coding with more complicated systems, but I have also learned how to overcome the challenges associated with them. Though VEX-AI can be confusing and stressful, the occasional achievement and learned expereince proves to be very important. ",
+  photo: DavidManPicture,
+};
+const NathanielThomas: User = {
+  name: { first: "Nathaniel", last: "Thomas" },
+  roles: ["Build"],
+  bio: "My name is Nathaniel Thomas, I am a sophomore on 7405X. I really enjoy being able to come together as a team to solve problems.",
+  photo: NathanielThomasPicture,
+};
+const RiyaSinha: User = {
+  name: { first: "Riya", last: "Sinha" },
+  roles: ["Code", "Build"],
+  bio: "Although I’m new to robotics, I have to say it’s one of my favorite things to do. I’ve learned a lot from my teammates and it’s just fun in general to work on these challenges. I also like reading, listening to music, and making jewelry. I look forward to continuing with robotics!",
+  photo: RiyaSinhaPicture,
+};
+const MaeSubramanian: User = {
+  name: { first: "Mae", last: "Subramanian" },
+  roles: ["Build"],
+  bio: "Hi! My name is Mae, I'm head of machining for Millburn Robotics and a member of 7405X. What I enjoy most about robotics is the opportunity to learn with a great community. From CNC machining  to CAD, I don't know where else I would have learned as much as I have here.",
+  photo: MaeSubramanianPicture,
+};
+const SunoyMishra: User = {
+  name: { first: "Sunoy", last: "Mishra" },
+  roles: ["Build"],
+  bio: "Hi, I am Sunoy (I also go by Sunny D). Millburn Robotics has been an amazing experience for me to learn about the design and creating process as well as learning how to revise designs and comply with the stress of time constraints. Though often stressful, I've found that I have learned a lot this year and hope to continue such a path of learning in the future.",
+  photo: SunoyMishraPicture,
+};
+const BeckerKotob: User = {
+  name: { first: "Becker", last: "Kotob" },
+  roles: ["Code"],
+  bio: "I am a proud member of 7405X. I am on the build team and built various parts of each robot from things like the frame and the lift. I enjoy Milburn robotic because of the atmosphere it creates and the people that participate in it. It is a fun after-school activity that I have learned many things from and have made many friendships.",
+  photo: BeckerKotobPicture,
+};
+const AidanKumar: User = {
+  name: { first: "Aidan", last: "Kumar" },
+  roles: ["Build"],
+  bio: "My name is Aidan Kumar, and I am a builder on team 7405N. This is my 2nd year doing robotics, and I enjoy working with other members of the team to design and build the robot. Outside of robotics, I fence and enjoy biking.",
+  photo: AidanKumarPicture,
+};
+const KevinXu: User = {
+  name: { first: "Kevin", last: "Xu" },
+  roles: ["Build"],
+  bio: "I'm Kevin Xu, and this is my third year doing robotics. My favorite part about robotics is getting to work together with everyone and the payoff when everyone's hard work succeeds.",
+  photo: KevinXuPicture,
+};
+const SophiaKlymchuk: User = {
+  name: { first: "Sophia", last: "Klymchuk" },
+  roles: ["Build"],
+  bio: "Hey, my name is Sophia and I am a builder for 7405M. My favorite thing about robotics is being able to combine my creativity with problem solving skills in order to create both innovative and functional mechanisms on our robot.",
+  photo: SophiaKlymchukPicture,
+};
+const ArmaanBassi: User = {
+  name: { first: "Armaan", last: "Bassi" },
+  roles: ["Build"],
+  bio: "Hey! My name is Armaan Bassi and I have been building in VEX robotics for 4 years. Prior, I did VEX IQ since I was in 4th grade and have developed a passion for robotics and the STEM field as a whole. While doing VEX during 8th grade and freshman year, I was a builder, documentation lead, and scouting lead. I enjoy doing robotics so much because I love to feel the satisfaction of something my team has built finally working. To add on, one of my favorite parts about robotics is that I get to make so many new friends and connections, whether it be with different organizations at a competition or just within Millburn Robotics. Some of my hobbies outside of school and robotics include track and field, percussion, video games, and just doing random programming projects. ",
+  photo: ArmaanBassiPicture,
+};
+const EthanPark: User = {
+  name: { first: "Ethan", last: "Park" },
+  roles: ["Build"],
+  bio: "My name is Ethan Park, I am currently a sophomore at Millburn High School. This is my second year on VEX robotics. I primarily work on building the bot whenever needed, along with CAD and design. My hobbies include fencing and learning about science. I look forward to a great season with my team this year.",
+  photo: EthanParkPicture,
+};
+const BurkeSeeger: User = {
+  name: { first: "Burke", last: "Seeger " },
+  roles: ["Code"],
+  bio: "I'm the co-captain of VexAI and have spent this last year solving challenges to create a fully autonomous Vex robot. VexAI has been a way to use my creativity to brainstorm and implement revolutionary solutions for everything from mapping to image recognition. ",
+  photo: BurkeSeegerPicture,
+};
+const GiaBhutani: User = {
+  name: { first: "Gia", last: "Bhutani" },
+  roles: ["Build"],
+  bio: "I am a sophomore at Millburn High School and am one of the builders on team 7405X. I started robotics doing VEX IQ grade, in 6th grade, to eventually participate in VEX and VEX AI.",
+  photo: GiaBhutaniPicture,
+};
+const ConnorVanderploeg: User = {
+  name: { first: "Connor", last: "Vanderploeg" },
+  roles: ["Build"],
+  bio: "Hi, I’m Connor and I am a junior. This is my first year as co-captain of 7405R and this is my third year doing VRC. I mainly help lead in the building and designing of the robot. I really enjoy doing VEX because of the problem solving and different approaches you can take to designing the robot. I also think the competitiveness of the game adds a lot of fun. When not doing robotics, I like to play golf and watch Formula 1.",
+  photo: ConnorVanderploegPicture,
+};
+const LiamPilarski: User = {
+  name: { first: "Liam", last: "Pilarski" },
+  roles: ["Code", "Build"],
+  bio: "For the three years I have been on Millburn Robotics, I have never been on the same team, nor have I been on the same team as someone else for more than one season. I have spent one year as a member, two years as a captain. I have spent two years doing VEX VRC, and one year doing VEXAI. This constant change has allowed me to meet many of my closest friends, test myself as a leader, and experiment with STEM in ways I never would have thought possible. Robotics has and will continue to push me out of my comfort zone for the better. ",
+  photo: LiamPilarskiPicture,
+};
+const EricDong: User = {
+  name: { first: "Eric", last: "Dong" },
+  roles: ["Code", "Build"],
+  bio: "I am a senior at MHS and a captain of 7405M. Tipping Point is my fifth VEX game I have competed in. I primarily serve as a code lead for the team, but I also have build and CAD experience. I enjoy working with the bare-metal environment of robotics and look forward to continue pursing robotics in college.",
+  photo: EricDongPicture,
+};
+const BrandonQiao: User = {
+  name: { first: "Brandon", last: "Qiao " },
+  roles: ["Build"],
+  bio: " Before high school, I never had an extreme interest in robotics. It was after I saw a presentation done by the world winning team during eighth grade that sparked my interest in the club. Since then I definitely do not regret joining this team because it provides me with a fun way to spend time outside of school. ",
+  photo: BrandonQiaoPicture,
+};
+const VictorDong: User = {
+  name: { first: "Victor", last: "Dong" },
+  roles: ["Build"],
+  bio: "Hello I am a co-captain of 7405 Kinetic. My main role on the team is as a builder. I enjoy all of the great learning experiences that come with robotics. I also enjoy meeting new people that share the same passions that I do.",
+  photo: VictorDongPicture,
+};
+const TanushShah: User = {
+  name: { first: "Tanush", last: "Shah" },
+  roles: ["Code", "Build"],
+  bio: "I am on 7405X, I enjoy programming in C++ as well as Cadding and Building.",
+  photo: TanushShahPicture,
+};
+const BenjaminLi: User = {
+  name: { first: "Benjamin", last: "Li" },
+  roles: ["Code"],
+  bio: "Hello, my name is Ben. I mainly enjoy programming the autonomous routine for my team, but I also like learning about different build aspects. My favorite part about the robotics program is the exciting and competitive environment, as well as the unique culture of the mill.  ",
+  photo: BenjaminLiPicture,
+};
+
 export const TeamInfo: Map<string, Team> = new Map([
-    ['7405K', {
-        league: 'VEX',
-        captains: [LiamPilarski],
-        name: '7405K',
-        description: "Team 7405K has had a great year so far. We've been working out of garages instead of our school's robotics lab due to Covid-19, but that hasn't stopped us from making full use of our time. We're still extremely competitive despite the lack of many in person competitions, and are participating in numerous online challenges, including the Annotated Programming Skills Challenge, the VEX CAD Challenge, and the Dell sponsored website challenge. Over this past year we have really grown together as a team, working more cohesively and effectively as time progresses. We hope that our dedication and the dedication of the other Millburn VEX teams will pay off in the long run in the form of a world's qualification, but even if it doesn't, we've all learned valuable lessons about teamwork and responsibility thus far. ",
-        members: [JoeySorkin,  ZaynRekhi, GiaBhutani, AbhiSingh, AidanKumar, VictorDong, KaiStone, SahilSirdeshpande, MohanSubramanian]
-    }],
-        ['7405R', {
-        league: 'VEX',
-        captains: [LiweiSun],
-        name: '7405R',
-        description: "We are 7405R, or Millburn Ruh Rohbotics! All throughout the pandemic, we have found numerous ways to connect and work together to create the best robot for the 2020-2021 VEX Change Up season. As a team, we don’t consider everyone to be just a builder or a coder. Although we all have our strengths, we are willing to help in any aspect of our robot that is needed while also making each other laugh at the same time. Although we are a new Millburn team, we have members from of 7405P (retired), 7405K, and 7405M from last year, alongside new members!  When designing our robot, our team focused on speed and versatility. We hope to achieve more success this year for skills through the pandemic and our fast cycle times are going to help us.",
-        members: [NatalieGreenspan, IshaanGhosh, ArmaanBassi ]
-    }],
-        ['7405M', {
-        league: 'VEX',
-        captains: [MelanieHerbert,  DevNadkarni],
-        name: '7405M',
-        description: "7405M, or Millburn Mercury, is a VEX robotics team competition in this year's Change Up Competition.  At the 2020 VEX States competition the team qualified for Worlds through both the Excellence Award and winning Tournament Finalists. Our goal for the future is mainly to grow and develop our problem solving, computer science, and mechanical building skills, in creating a competitive robot this year. ",
-        members: [KevinXu, ConnorVanderploeg, SahilShah, DeenaWeiss]
-    }],
-        ['7405N', {
-        league: 'VEX',
-        captains: [AryanDugar, KeshabGatehouse],
-        name: '7405N',
-        description: 'As cliché as it sounds, N is all about working hard and playing hard. We’re usually the loudest team in the Mill because of our joking, laughing, music, and heated arguments. We also have a tendency to pull members of other teams into our shenanigans as well. Despite our lighthearted attitude, we still put in the time and effort necessary to succeed in such a competitive activity, and it showed in our Tower Takeover performance: 23rd in world skills, State Semifinalists, and Cherry Hill Tournament Champions. We hope to keep approaching robotics with the same mindset as we tackle the challenges of COVID and the Change Up season.',
-        members: [IshaanSalhotra, BrandonQiao, NirvanPanjwani, ZenBhutani,EthanSterling, BruceZhang]
-    }],
-        ['7405X', {
-        league: 'VEX-AI',
-        captains: [SahilShah, SahilSirdeshpande],
-        name: '7405X',
-        description: "Leading a team for the VEX AI Competition this year has turned out to be an adventure. Since this competition has not existed in the past, our team has constantly found new ways to innovate the design and code for our robots. From artificial intelligence to pathfinding systems, the software we wrote this year has allowed each code member to manifest their expertise while learning new concepts from others in the process. We are all excited to compete this season!",
-        members: [JoeySorkin, KaylaWang, BruceZhang, AlexBarker, AaronAgarwal, NikhilPrakash, MohanSubramanian]
-    }]
-])
+  [
+    "7405K",
+    {
+      league: "VEX",
+      captains: [VictorDong, BrandonQiao],
+      name: "7405K",
+      description:
+        "7405K is a team full of fun, dedication and collaboration. Since day 1, our team has been passionate and eager to commit their time to creating and innovating robot designs to best conquer this year's game. Although we have experienced issues and unsuccessful designs, we do not let those problems hinder our progress. In the face of any sort of adversity, we always to try to find ways around them. Through what we have learned over the course of the past months, we have had a lot of success in many local tournaments. Now that we have reached the milestone of qualifying for Worlds, we hope our skills and our growth will be reflected in Texas.",
+      members: [YujieSun, WayneXiong, RichardDong, GrantZhou],
+    },
+  ],
+  [
+    "7405R",
+    {
+      league: "VEX",
+      captains: [ArmaanBassi, ConnorVanderploeg],
+      name: "7405R",
+      description:
+        "7405R had a successful 2021-2022 season, getting tournament finalists at every competition we went to this year! We primarily worked out of our school's robotics lab this year, but due to COVID concerns, we had to briefly work from our houses and did as much work as we could at home. Millburn VEX has taught us how to be competitive and gives every member key skills that they can utilize in the future. Although we did not have as many competitions as we would have had pre-COVID, we tried to get as much experience as we could with the resources available to us. This is the second year 7405R has been competing, and we won the state championship in the 2020-2021 season! We hope to continue last year and this year's success in the future, hopefully qualifying for the world championship again next year. ",
+      members: [AaravDugar, EthanPark, SunoyMishra, LexieLee],
+    },
+  ],
+  [
+    "7405N",
+    {
+      league: "VEX",
+      captains: [AryanDugar],
+      name: "7405N",
+      description:
+        "As cliché as it sounds, N is all about working hard and playing hard. We’re usually the loudest team in the Mill because of our joking, laughing, music, and heated arguments. We also have a tendency to pull members of other teams into our shenanigans as well. Despite our lighthearted attitude, we still put in the time and effort necessary to succeed in such a competitive activity, and it showed in our Tower Takeover performance: 23rd in world skills, State Semifinalists, and Cherry Hill Tournament Champions. We hope to keep approaching robotics with the same mindset as we tackle the challenges of the Tipping Point season.",
+      members: [IshaanSalhotra, NikhilPrakash, LukasPilarski, AidanKumar],
+    },
+  ],
+  [
+    "7405M",
+    {
+      league: "VEX",
+      captains: [EricDong, CaseyHein],
+      name: "7405M",
+      description:
+        "7405M has been able to have a very successful season this year. Having the ability to be back in-person this year has allowed us to have smooth communication and grow closer as a team. We've had to face many chllenges along the way, but none of them ever questioned our determination to win. Our ability to improve incramentally, getting better with each competition, and our trust in one another to get everything done are some of our strongest qualities. It's an honor to be able to compete at VEX Worlds, and with this team we know we can make something special.  ",
+      members: [
+        YuwenLiang,
+        AmyPeckel,
+        JiaPanjwani,
+        KevinXu,
+        SophiaKlymchuk,
+        JoeySorkin,
+        BenjaminLi,
+      ],
+    },
+  ],
+  [
+    "7405X",
+    {
+      league: "VEX-AI",
+      captains: [LiamPilarski, BurkeSeeger],
+      name: "7405X",
+      description:
+        "VEXAI is in a great place right now. Although our competition season has been non-existent due to lack of other capable teams to compete against, we have continued working on our robots out of a passion for exploring the unknown. As of right now, we have a high-level AI algorithm that controls the movement of both of our robots with a high degree of accuracy, a feat which we are extremely proud of, and one that has been in the works since May of 2021. We hope to share our work with the world through our demo during VRC worlds on May 4th, 2022, as well as through a reveal video to be filmed later this season. We have learned a lot about the world of autonomous systems, and the skills we have developed this season are sure to carry over in future projects we pursue. ",
+      members: [
+        AlexBarker,
+        RitvikGupta,
+        SahmRahman,
+        DavidMan,
+        NathanielThomas,
+        MaeSubramanian,
+        RiyaSinha,
+        BeckerKotob,
+        GiaBhutani,
+        TanushShah,
+      ],
+    },
+  ],
+]);

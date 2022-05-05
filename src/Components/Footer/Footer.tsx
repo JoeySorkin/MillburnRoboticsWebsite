@@ -45,12 +45,12 @@ export default function Footer() {
             onClick={sendAnalytics}
             target="_blank"
             style={{ color: colors.white }}
-            href="https://github.com/JoeySorkin/MillburnRoboticsWebsite2020"
+            href="https://github.com/JoeySorkin/MillburnRoboticsWebsite"
             endIcon={<GitHub />}
           >
             Made By Joey Sorkin
           </Button>
-          {" ©"} 2020
+          {" ©"} 2022
         </div>
       </Grid>
     </div>

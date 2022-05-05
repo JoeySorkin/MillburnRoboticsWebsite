@@ -2,8 +2,8 @@ import React from "react";
 import { Paper, Typography, Box } from "@material-ui/core";
 import colors from "../Core/colors";
 import Fade from "react-reveal/Fade";
-import team from "./Team.png";
-import robot from "./Robot.png";
+import Nimage from "./7405N.jpg";
+import StateComp from "./StateComp.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 const useStyle = makeStyles((theme) => ({
   papersmall: {
@@ -59,7 +59,7 @@ export default function OurProgram() {
               <img
                 className={classes.img}
                 width="auto"
-                src={team}
+                src={Nimage}
                 alt="Millburn Robotics team holding vex robotics banner"
               />
             </Paper>
@@ -139,7 +139,7 @@ export default function OurProgram() {
               <img
                 className={classes.img}
                 width="auto"
-                src={robot}
+                src={StateComp}
                 alt="Millburn Robotics robot"
               />
             </Paper>
